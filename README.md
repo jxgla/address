@@ -1,10 +1,12 @@
-# Address Data System
+# Address Generator
 
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-success)
 
-精准的全球地址数据系统，内置多国地址生成、爬虫采集和数据增强能力。完全支持代理配置和开源友好的环境变量管理。
+> Inspired by [hotbob011/real-random-taxfree-address](https://github.com/hotbob011/real-random-taxfree-address). Thanks for the inspiration.
+
+精准的全球地址生成系统，内置多国地址生成、爬虫采集和数据增强能力。完全支持代理配置和开源友好的环境变量管理。
 
 ## 🌟 主要特性
 
@@ -303,20 +305,20 @@ python scripts/enhance-address-data.py
 
 ## 📝 更新日志
 
-### v1.2.0 - 2024-01-15
+### v1.2.0 - 2026-03-12
 
 - ✨ 新增：美国税务优化数据（零税州 + 低税州）
 - 🔐 改进：完整的配置管理系统（.env 支持）
 - 🎯 改进：自动项目组织和清理
 - 📚 改进：强化文档和示例
 
-### v1.1.0 - 2024-01-10
+### v1.1.0 - 2026-03-08
 
 - ✨ 新增：Residential Proxy 支持
 - 🐛 修复：爬虫重试逻辑
 - 📊 新增：数据验证工具
 
-### v1.0.0 - 2024-01-01
+### v1.0.0 - 2026-03-01
 
 - 🎉 初始版本发布
 
