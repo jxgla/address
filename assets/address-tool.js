@@ -24,6 +24,19 @@ const COUNTRY_META = {
   SG: { locale: "en", dialing: "+65", postalLabel: "Postal code", nameProfile: "mixed" },
 };
 
+const STREET_BASE = {
+  western: ["Oak", "Pine", "Maple", "River", "Cedar", "Liberty", "Sunset", "Hill", "Lake", "Washington"],
+  cjk: ["朝阳", "和平", "中山", "人民", "建设", "长安", "新华", "文化", "解放", "幸福"],
+  jp: ["若葉", "桜", "青葉", "中央", "緑", "旭", "山手", "白川", "花園", "日の出"],
+};
+
+const STRICT_NAME_FILTERS = {
+  western: item => /[A-Za-z]/.test(item) && !/[一-龥]/.test(item) && !/[ぁ-んァ-ヶ]/.test(item),
+  cjk: item => /[一-龥]/.test(item) && !/[A-Za-z]/.test(item),
+  jp: item => /[ぁ-んァ-ヶ一-龥]/.test(item) && !/[A-Za-z]/.test(item),
+  mixed: item => Boolean(item),
+};
+
 const cache = new Map();
 let lastGenerated = [];
 
@@ -77,29 +90,17 @@ function normalizeRegions(rawData) {
   }));
 }
 
-function buildStreet(locale) {
-  const streetBase = [
-    "Oak",
-    "Pine",
-    "Maple",
-    "River",
-    "Cedar",
-    "Liberty",
-    "Sunset",
-    "朝阳",
-    "和平",
-    "中山",
-    "樱花",
-    "青云",
-    "中央",
-    "若葉",
-    "桜",
-    "青葉",
-  ];
-
+function buildStreet(country, locale) {
+  const profile = COUNTRY_META[country]?.nameProfile || "mixed";
+  const streetBase = STREET_BASE[profile] || STREET_BASE.western;
   const suffixes = cache.get("data/streetTypesData.json")?.[locale] || cache.get("data/streetTypesData.json")?.en || ["Street"];
   const houseNumber = `${randomInt(11, 9879)}`;
-  return `${houseNumber} ${randomItem(streetBase)}${locale === "zh" || locale === "ja" ? "" : " "}${randomItem(suffixes)}`;
+
+  if (locale === "zh" || locale === "ja") {
+    return `${randomItem(streetBase)}${randomItem(suffixes)}${houseNumber}号`;
+  }
+
+  return `${houseNumber} ${randomItem(streetBase)} ${randomItem(suffixes)}`;
 }
 
 function getNamePools(namesData, jpNamesData, country) {
@@ -125,23 +126,20 @@ function buildName(namesData, jpNamesData, mode, country, locale) {
   const last = pools.last;
   const firstPool = Math.random() > 0.48 ? male : female;
 
-  const hanHint = /[一-龥]/;
-  const kanaHint = /[ぁ-んァ-ヶ]/;
-  const westernHint = /[A-Za-z]/;
   const profile = COUNTRY_META[country]?.nameProfile || "mixed";
+  const strictFilter = STRICT_NAME_FILTERS[profile] || STRICT_NAME_FILTERS.mixed;
+  const asiaFilter = item => /[一-龥ぁ-んァ-ヶ]/.test(item) && !/[A-Za-z]/.test(item);
+  const westernFilter = item => /[A-Za-z]/.test(item) && !/[一-龥ぁ-んァ-ヶ]/.test(item);
 
   const filterByCountry = list => {
-    if (profile === "western") return list.filter(item => westernHint.test(item) && !hanHint.test(item) && !kanaHint.test(item));
-    if (profile === "cjk") return list.filter(item => hanHint.test(item));
-    if (profile === "jp") return list.filter(item => kanaHint.test(item) || hanHint.test(item));
-    return list;
+    return list.filter(strictFilter);
   };
 
   const filterByMode = list => {
     const countryFiltered = filterByCountry(list);
     const base = countryFiltered.length ? countryFiltered : list;
-    if (mode === "asia") return base.filter(item => hanHint.test(item) || kanaHint.test(item));
-    if (mode === "western") return base.filter(item => westernHint.test(item));
+    if (mode === "asia") return base.filter(asiaFilter);
+    if (mode === "western") return base.filter(westernFilter);
     return base;
   };
 
@@ -160,7 +158,22 @@ function buildPostalCode(country) {
   if (country === "US") return `${randomInt(10000, 99999)}`;
   if (country === "CA") return `A${randomInt(1, 9)}A ${randomInt(1, 9)}A${randomInt(1, 9)}`;
   if (country === "GB") return `E${randomInt(1, 9)} ${randomInt(1, 9)}AA`;
+  if (country === "JP") return `${randomInt(100, 999)}-${randomInt(1000, 9999)}`;
+  if (country === "HK") return `${randomInt(100000, 999999)}`;
+  if (country === "TW") return `${randomInt(100, 999)}`;
   return `${randomInt(100000, 999999)}`;
+}
+
+function formatAddress({ country, street, city, regionLabel, postalCode }) {
+  if (country === "CN" || country === "HK" || country === "TW") {
+    return `${regionLabel}${city}${street}，${postalCode}`;
+  }
+
+  if (country === "JP") {
+    return `${regionLabel}${city}${street} 〒${postalCode}`;
+  }
+
+  return `${street}, ${city}, ${regionLabel}, ${country} ${postalCode}`;
 }
 
 function buildPhone(country) {
@@ -200,20 +213,21 @@ async function generateProfiles({ country, batchSize, mode }) {
     const city = randomItem(region?.cities || []) || region?.label || "Unknown";
     const fullName = buildName(namesData, jpNamesData, mode, country, locale);
     const postalCode = buildPostalCode(country);
-      const street = buildStreet(locale);
+    const street = buildStreet(country, locale);
+    const regionLabel = region?.label || "Unknown";
 
     return {
       country,
       fullName,
-      region: region?.label || "Unknown",
+      region: regionLabel,
       city,
-        street,
+      street,
       postalCode,
       phone: buildPhone(country),
       email: buildEmail(fullName, country),
       birthDate: buildBirthDate(),
       label: COUNTRY_META[country]?.postalLabel || "Postal code",
-        address: `${street}, ${city}, ${region?.label || "Unknown"}, ${country} ${postalCode}`,
+      address: formatAddress({ country, street, city, regionLabel, postalCode }),
     };
   });
 }
