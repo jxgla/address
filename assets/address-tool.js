@@ -12,16 +12,16 @@ const DATA_FILES = {
 };
 
 const COUNTRY_META = {
-  US: { locale: "en", dialing: "+1", postalLabel: "ZIP" },
-  CN: { locale: "zh", dialing: "+86", postalLabel: "邮编" },
-  JP: { locale: "ja", dialing: "+81", postalLabel: "邮编" },
-  HK: { locale: "zh", dialing: "+852", postalLabel: "区号" },
-  TW: { locale: "zh", dialing: "+886", postalLabel: "邮递区号" },
-  GB: { locale: "en", dialing: "+44", postalLabel: "Postcode" },
-  DE: { locale: "en", dialing: "+49", postalLabel: "PLZ" },
-  CA: { locale: "en", dialing: "+1", postalLabel: "Postal code" },
-  AU: { locale: "en", dialing: "+61", postalLabel: "Postcode" },
-  SG: { locale: "en", dialing: "+65", postalLabel: "Postal code" },
+  US: { locale: "en", dialing: "+1", postalLabel: "ZIP", nameProfile: "western" },
+  CN: { locale: "zh", dialing: "+86", postalLabel: "邮编", nameProfile: "cjk" },
+  JP: { locale: "ja", dialing: "+81", postalLabel: "邮编", nameProfile: "jp" },
+  HK: { locale: "zh", dialing: "+852", postalLabel: "区号", nameProfile: "cjk" },
+  TW: { locale: "zh", dialing: "+886", postalLabel: "邮递区号", nameProfile: "cjk" },
+  GB: { locale: "en", dialing: "+44", postalLabel: "Postcode", nameProfile: "western" },
+  DE: { locale: "en", dialing: "+49", postalLabel: "PLZ", nameProfile: "western" },
+  CA: { locale: "en", dialing: "+1", postalLabel: "Postal code", nameProfile: "western" },
+  AU: { locale: "en", dialing: "+61", postalLabel: "Postcode", nameProfile: "western" },
+  SG: { locale: "en", dialing: "+65", postalLabel: "Postal code", nameProfile: "mixed" },
 };
 
 const cache = new Map();
@@ -102,19 +102,47 @@ function buildStreet(locale) {
   return `${houseNumber} ${randomItem(streetBase)}${locale === "zh" || locale === "ja" ? "" : " "}${randomItem(suffixes)}`;
 }
 
-function buildName(namesData, mode, locale) {
-  const male = namesData.firstName_male || [];
-  const female = namesData.firstName_female || [];
-  const last = namesData.lastName || namesData.last_name || [];
+function getNamePools(namesData, jpNamesData, country) {
+  if (country === "JP") {
+    return {
+      male: jpNamesData.firstName_male || [],
+      female: jpNamesData.firstName_female || [],
+      last: jpNamesData.lastName || jpNamesData.last_name || [],
+    };
+  }
+
+  return {
+    male: namesData.firstName_male || [],
+    female: namesData.firstName_female || [],
+    last: namesData.lastName || namesData.last_name || [],
+  };
+}
+
+function buildName(namesData, jpNamesData, mode, country, locale) {
+  const pools = getNamePools(namesData, jpNamesData, country);
+  const male = pools.male;
+  const female = pools.female;
+  const last = pools.last;
   const firstPool = Math.random() > 0.48 ? male : female;
 
-  const asiaHint = /[一-龥ぁ-んァ-ヶ]/;
+  const hanHint = /[一-龥]/;
+  const kanaHint = /[ぁ-んァ-ヶ]/;
   const westernHint = /[A-Za-z]/;
+  const profile = COUNTRY_META[country]?.nameProfile || "mixed";
+
+  const filterByCountry = list => {
+    if (profile === "western") return list.filter(item => westernHint.test(item) && !hanHint.test(item) && !kanaHint.test(item));
+    if (profile === "cjk") return list.filter(item => hanHint.test(item));
+    if (profile === "jp") return list.filter(item => kanaHint.test(item) || hanHint.test(item));
+    return list;
+  };
 
   const filterByMode = list => {
-    if (mode === "asia") return list.filter(item => asiaHint.test(item));
-    if (mode === "western") return list.filter(item => westernHint.test(item));
-    return list;
+    const countryFiltered = filterByCountry(list);
+    const base = countryFiltered.length ? countryFiltered : list;
+    if (mode === "asia") return base.filter(item => hanHint.test(item) || kanaHint.test(item));
+    if (mode === "western") return base.filter(item => westernHint.test(item));
+    return base;
   };
 
   const filteredFirst = filterByMode(firstPool);
@@ -157,9 +185,10 @@ function buildEmail(name, country) {
 }
 
 async function generateProfiles({ country, batchSize, mode }) {
-  const [addressData, namesData] = await Promise.all([
+  const [addressData, namesData, jpNamesData] = await Promise.all([
     loadJson(DATA_FILES[country]),
     loadJson("data/namesData.json"),
+    loadJson("data/jpNamesData.json"),
     loadJson("data/streetTypesData.json"),
   ]);
 
@@ -169,21 +198,22 @@ async function generateProfiles({ country, batchSize, mode }) {
   return Array.from({ length: batchSize }, () => {
     const region = randomItem(regions);
     const city = randomItem(region?.cities || []) || region?.label || "Unknown";
-    const fullName = buildName(namesData, mode, locale);
+    const fullName = buildName(namesData, jpNamesData, mode, country, locale);
     const postalCode = buildPostalCode(country);
+      const street = buildStreet(locale);
 
     return {
       country,
       fullName,
       region: region?.label || "Unknown",
       city,
-      street: buildStreet(locale),
+        street,
       postalCode,
       phone: buildPhone(country),
       email: buildEmail(fullName, country),
       birthDate: buildBirthDate(),
       label: COUNTRY_META[country]?.postalLabel || "Postal code",
-      address: `${buildStreet(locale)}, ${city}, ${region?.label || "Unknown"}, ${country} ${postalCode}`,
+        address: `${street}, ${city}, ${region?.label || "Unknown"}, ${country} ${postalCode}`,
     };
   });
 }
