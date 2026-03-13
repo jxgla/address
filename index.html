@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address Lab | 静态地址与虚拟身份工具</title>
+    <meta
+      name="description"
+      content="纯静态部署的地址与虚拟身份生成工具，可直接部署到 Cloudflare Pages，再嵌入博客或单独打开。"
+    />
+    <link rel="stylesheet" href="./assets/address-tool.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">STATIC TOOL · CLOUDFLARE PAGES READY</span>
+          <h1>Address Lab</h1>
+          <p>
+            先做成独立静态页面，不接入博客主逻辑，不碰 `/chat` 和首页机器人。后续上 Cloudflare Pages 后，博客只放一个外链或 iframe。
+          </p>
+        </div>
+        <div class="hero-status">
+          <div class="status-card">
+            <strong>部署形态</strong>
+            <span>纯静态页面</span>
+          </div>
+          <div class="status-card">
+            <strong>数据来源</strong>
+            <span>本地 JSON</span>
+          </div>
+          <div class="status-card">
+            <strong>后端依赖</strong>
+            <span>无</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="panel controls-panel">
+          <div class="panel-head">
+            <h2>生成控制台</h2>
+            <p>浏览器本地生成，适合先部署验证 UI 与嵌入链路。</p>
+          </div>
+
+          <form id="generator-form" class="generator-form">
+            <label>
+              <span>地区</span>
+              <select id="country-select" name="country">
+                <option value="US">United States</option>
+                <option value="CN">中国</option>
+                <option value="JP">日本</option>
+                <option value="HK">香港</option>
+                <option value="TW">台湾</option>
+                <option value="GB">United Kingdom</option>
+                <option value="DE">Deutschland</option>
+                <option value="CA">Canada</option>
+                <option value="AU">Australia</option>
+                <option value="SG">Singapore</option>
+              </select>
+            </label>
+
+            <label>
+              <span>身份风格</span>
+              <select id="profile-mode" name="profileMode">
+                <option value="balanced">均衡随机</option>
+                <option value="asia">偏亚洲</option>
+                <option value="western">偏欧美</option>
+              </select>
+            </label>
+
+            <div class="grid two-up">
+              <label>
+                <span>生成数量</span>
+                <input id="batch-size" name="batchSize" type="number" min="1" max="12" value="1" />
+              </label>
+
+              <label>
+                <span>输出格式</span>
+                <select id="output-format" name="outputFormat">
+                  <option value="card">卡片视图</option>
+                  <option value="json">JSON</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="actions">
+              <button type="submit" class="btn btn-primary">生成</button>
+              <button type="button" id="copy-result" class="btn btn-secondary" disabled>复制结果</button>
+              <button type="button" id="download-json" class="btn btn-secondary" disabled>下载 JSON</button>
+            </div>
+          </form>
+
+          <div class="tips">
+            <strong>建议集成方式</strong>
+            <ul>
+              <li>先把这个项目整体部署到 Cloudflare Pages。</li>
+              <li>博客只放一个按钮或 iframe，不再注入复杂脚本。</li>
+              <li>如需更严格隔离，可仅新窗口打开，不嵌入。</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="panel results-panel">
+          <div class="panel-head">
+            <h2>生成结果</h2>
+            <p id="result-meta">等待生成。</p>
+          </div>
+
+          <div id="empty-state" class="empty-state">
+            <div class="empty-icon">◎</div>
+            <p>点击左侧按钮，先生成一组静态 mock 地址数据。</p>
+          </div>
+
+          <div id="result-cards" class="result-cards" hidden></div>
+          <pre id="result-json" class="result-json" hidden></pre>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./assets/address-tool.js"></script>
+  </body>
+  </html>
