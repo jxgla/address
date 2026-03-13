@@ -54,53 +54,30 @@ body {
   box-shadow: var(--shadow);
 }
 
-.hero-copy,
-.hero-status,
-.panel {
-  border-radius: var(--radius);
+  .page-header {
+    margin-bottom: 18px;
+  }
+
+  .page-header h1 {
+    margin: 0;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.08;
+  }
+
+  .panel,
+  .profile-card {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    backdrop-filter: blur(16px);
+    box-shadow: var(--shadow);
+  }
+
+  .panel {
+    border-radius: var(--radius);
 }
 
-.hero-copy {
-  padding: 28px;
-}
-
-.eyebrow {
-  display: inline-flex;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: #bfdbfe;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-}
-
-.hero-copy h1 {
-  margin: 14px 0 12px;
-  font-size: clamp(38px, 5vw, 64px);
-  line-height: 1.02;
-}
-
-.hero-copy p,
-.panel-head p,
-.tips li,
-.profile-line,
-.result-json,
-label span,
-input,
-select,
-button {
-  font-size: 15px;
-}
-
-.hero-copy p,
-.panel-head p,
-.tips,
-.profile-line,
-#result-meta {
   color: var(--muted);
-  line-height: 1.7;
 }
-
 .hero-status {
   padding: 18px;
   display: grid;
@@ -109,29 +86,13 @@ button {
 
 .status-card {
   border-radius: 18px;
-  padding: 16px;
   background: var(--surface-strong);
-}
 
 .status-card strong,
 .panel-head h2 {
   display: block;
   margin-bottom: 6px;
-}
-
-.workspace {
-  display: grid;
-  grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
-  gap: 18px;
-}
-
-.panel {
-  padding: 22px;
-}
-
-.panel-head {
-  margin-bottom: 18px;
-}
+  .panel-head h2 {
 
 .panel-head h2 {
   margin-top: 0;
@@ -224,25 +185,6 @@ select:focus {
   border-color: rgba(148, 163, 184, 0.16);
 }
 
-.tips {
-  margin-top: 18px;
-  padding: 16px;
-  border-radius: 18px;
-  background: rgba(96, 165, 250, 0.08);
-  border: 1px solid rgba(96, 165, 250, 0.14);
-}
-
-.tips strong {
-  display: block;
-  margin-bottom: 8px;
-}
-
-.tips ul {
-  margin: 0;
-  padding-left: 18px;
-  gap: 6px;
-}
-
 .empty-state {
   min-height: 420px;
   display: grid;
@@ -294,7 +236,6 @@ select:focus {
 }
 
 @media (max-width: 920px) {
-  .hero,
   .workspace {
     grid-template-columns: 1fr;
   }
@@ -306,8 +247,6 @@ select:focus {
     padding-top: 20px;
   }
 
-  .hero-copy,
-  .hero-status,
   .panel {
     padding: 18px;
   }
