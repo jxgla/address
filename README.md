@@ -262,6 +262,24 @@ python scripts/check-data.py
 python scripts/enhance-address-data.py
 ```
 
+## ☁️ Cloudflare Pages 部署
+
+Pages 发布目录默认使用 `dist/pages`，避免误把整个仓库内容直接公开到线上。
+
+```bash
+python scripts/prepare-pages-deploy.py
+wrangler.cmd pages deploy dist/pages --project-name address-lab
+```
+
+打包脚本当前只会复制这些公开运行时资源：
+
+- `index.html`
+- `_headers`
+- `assets/`
+- `data/`
+
+这样 `scripts/`、`docs/`、临时日志和其他仓库内部文件就不会被误发布。
+
 ## 📖 文档
 
 完整文档位于 `docs/` 目录：
