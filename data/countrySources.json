@@ -1,0 +1,1932 @@
+{
+  "generated_at": "2026-03-28T17:48:10.295832+00:00",
+  "pipeline": {
+    "script": "scripts/sync-sourced-country-data.py",
+    "primary_source": {
+      "name": "Wikidata Query Service",
+      "url": "https://query.wikidata.org/",
+      "docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en"
+    },
+    "notes": "Newly added country files are rebuilt from public structured data. Region labels are kept stable for the frontend, while city entries are refreshed from Wikidata."
+  },
+  "countries": {
+    "IE": {
+      "country_code": "IE",
+      "country": "Ireland",
+      "output_file": "data/ieData.json",
+      "country_qid": "Q27",
+      "country_url": "https://www.wikidata.org/wiki/Q27",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T15:47:09.671760+00:00",
+      "regions": [
+        {
+          "label": "Dublin",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q173500",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q173500",
+          "city_count": 3
+        },
+        {
+          "label": "Cork",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q162475",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q162475",
+          "city_count": 3
+        },
+        {
+          "label": "Galway",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q169923",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q169923",
+          "city_count": 5
+        },
+        {
+          "label": "Limerick",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q178283",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q178283",
+          "city_count": 1
+        },
+        {
+          "label": "Waterford",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q184594",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q184594",
+          "city_count": 1
+        },
+        {
+          "label": "Kildare",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q173332",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q173332",
+          "city_count": 2
+        },
+        {
+          "label": "Mayo",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q178626",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q178626",
+          "city_count": 2
+        },
+        {
+          "label": "Donegal",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q179424",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q179424",
+          "city_count": 1
+        },
+        {
+          "label": "Kilkenny",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q180231",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q180231",
+          "city_count": 1
+        }
+      ],
+      "country_root_status": "sourced_wikidata_curated_labels",
+      "country_root_city_count": 8,
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 8 region(s) sourced directly from Wikidata; 1 region(s) use curated city labels to avoid municipality-heavy Wikidata outputs; the country root list uses curated labels for stable nationwide coverage."
+    },
+    "NL": {
+      "country_code": "NL",
+      "country": "Netherlands",
+      "output_file": "data/nlData.json",
+      "country_qid": "Q55",
+      "country_url": "https://www.wikidata.org/wiki/Q55",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-27T15:22:08.760440+00:00",
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 12 region(s) sourced directly from Wikidata.",
+      "regions": [
+        {
+          "label": "Drenthe",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q772",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q772",
+          "city_count": 3
+        },
+        {
+          "label": "Flevoland",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q707",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q707",
+          "city_count": 5
+        },
+        {
+          "label": "Friesland",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q770",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q770",
+          "city_count": 5
+        },
+        {
+          "label": "Gelderland",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q775",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q775",
+          "city_count": 4
+        },
+        {
+          "label": "Groningen",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q752",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q752",
+          "city_count": 3
+        },
+        {
+          "label": "Limburg",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1093",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1093",
+          "city_count": 5
+        },
+        {
+          "label": "North Brabant",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1101",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1101",
+          "city_count": 4
+        },
+        {
+          "label": "North Holland",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q701",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q701",
+          "city_count": 5
+        },
+        {
+          "label": "Overijssel",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q773",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q773",
+          "city_count": 3
+        },
+        {
+          "label": "South Holland",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q694",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q694",
+          "city_count": 5
+        },
+        {
+          "label": "Utrecht",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q776",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q776",
+          "city_count": 5
+        },
+        {
+          "label": "Zeeland",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q705",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q705",
+          "city_count": 5
+        }
+      ]
+    },
+    "DE": {
+      "country_code": "DE",
+      "country": "Germany",
+      "output_file": "data/deData.json",
+      "country_qid": "Q183",
+      "country_url": "https://www.wikidata.org/wiki/Q183",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T09:39:33.006293+00:00",
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 16 region(s) sourced directly from Wikidata.",
+      "regions": [
+        {
+          "label": "Baden-Wurttemberg",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q985",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q985",
+          "city_count": 4
+        },
+        {
+          "label": "Bavaria",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q980",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q980",
+          "city_count": 3
+        },
+        {
+          "label": "Berlin",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q64",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q64",
+          "city_count": 1
+        },
+        {
+          "label": "Brandenburg",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1208",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1208",
+          "city_count": 4
+        },
+        {
+          "label": "Bremen",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1209",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1209",
+          "city_count": 2
+        },
+        {
+          "label": "Hamburg",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1055",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1055",
+          "city_count": 1
+        },
+        {
+          "label": "Hesse",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1199",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1199",
+          "city_count": 5
+        },
+        {
+          "label": "Lower Saxony",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1197",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1197",
+          "city_count": 4
+        },
+        {
+          "label": "Mecklenburg-Vorpommern",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1196",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1196",
+          "city_count": 5
+        },
+        {
+          "label": "North Rhine-Westphalia",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1198",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1198",
+          "city_count": 5
+        },
+        {
+          "label": "Rhineland-Palatinate",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1200",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1200",
+          "city_count": 5
+        },
+        {
+          "label": "Saarland",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1201",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1201",
+          "city_count": 5
+        },
+        {
+          "label": "Saxony",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1202",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1202",
+          "city_count": 3
+        },
+        {
+          "label": "Saxony-Anhalt",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1206",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1206",
+          "city_count": 3
+        },
+        {
+          "label": "Schleswig-Holstein",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1194",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1194",
+          "city_count": 5
+        },
+        {
+          "label": "Thuringia",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1205",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1205",
+          "city_count": 4
+        }
+      ]
+    },
+    "BE": {
+      "country_code": "BE",
+      "country": "Belgium",
+      "output_file": "data/beData.json",
+      "country_qid": "Q31",
+      "country_url": "https://www.wikidata.org/wiki/Q31",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T12:14:54.950782+00:00",
+      "regions": [
+        {
+          "label": "Brussels-Capital Region",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q240",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q240",
+          "city_count": 3
+        },
+        {
+          "label": "Antwerp Province",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1116",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1116",
+          "city_count": 5
+        },
+        {
+          "label": "East Flanders",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1114",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1114",
+          "city_count": 4
+        },
+        {
+          "label": "West Flanders",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1113",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1113",
+          "city_count": 4
+        },
+        {
+          "label": "Flemish Brabant",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1118",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1118",
+          "city_count": 5
+        },
+        {
+          "label": "Limburg",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1095",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1095",
+          "city_count": 5
+        },
+        {
+          "label": "Hainaut",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1129",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1129",
+          "city_count": 4
+        },
+        {
+          "label": "Liege",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1127",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1127",
+          "city_count": 3
+        },
+        {
+          "label": "Namur",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1125",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1125",
+          "city_count": 4
+        },
+        {
+          "label": "Luxembourg",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1126",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1126",
+          "city_count": 5
+        }
+      ],
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 10 region(s) sourced directly from Wikidata."
+    },
+    "FR": {
+      "country_code": "FR",
+      "country": "France",
+      "output_file": "data/frData.json",
+      "country_qid": "Q142",
+      "country_url": "https://www.wikidata.org/wiki/Q142",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T10:20:15.183034+00:00",
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 10 region(s) sourced directly from Wikidata.",
+      "regions": [
+        {
+          "label": "Ile-de-France",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q13917",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q13917",
+          "city_count": 5
+        },
+        {
+          "label": "Auvergne-Rhone-Alpes",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q18338206",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q18338206",
+          "city_count": 5
+        },
+        {
+          "label": "Provence-Alpes-Cote d'Azur",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q15104",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q15104",
+          "city_count": 4
+        },
+        {
+          "label": "Occitanie",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q18678265",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q18678265",
+          "city_count": 4
+        },
+        {
+          "label": "Nouvelle-Aquitaine",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q18678082",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q18678082",
+          "city_count": 5
+        },
+        {
+          "label": "Hauts-de-France",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q18677767",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q18677767",
+          "city_count": 5
+        },
+        {
+          "label": "Grand Est",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q18677983",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q18677983",
+          "city_count": 5
+        },
+        {
+          "label": "Brittany",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q12130",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q12130",
+          "city_count": 5
+        },
+        {
+          "label": "Normandy",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q18677875",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q18677875",
+          "city_count": 3
+        },
+        {
+          "label": "Pays de la Loire",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q16994",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q16994",
+          "city_count": 3
+        }
+      ]
+    },
+    "ES": {
+      "country_code": "ES",
+      "country": "Spain",
+      "output_file": "data/esData.json",
+      "country_qid": "Q29",
+      "country_url": "https://www.wikidata.org/wiki/Q29",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T10:51:23.220442+00:00",
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 10 region(s) sourced directly from Wikidata.",
+      "regions": [
+        {
+          "label": "Community of Madrid",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q5756",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q5756",
+          "city_count": 5
+        },
+        {
+          "label": "Catalonia",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q5705",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q5705",
+          "city_count": 5
+        },
+        {
+          "label": "Andalusia",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q5783",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q5783",
+          "city_count": 5
+        },
+        {
+          "label": "Valencian Community",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q5720",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q5720",
+          "city_count": 4
+        },
+        {
+          "label": "Basque Country",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q3995",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q3995",
+          "city_count": 4
+        },
+        {
+          "label": "Galicia",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q3908",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q3908",
+          "city_count": 5
+        },
+        {
+          "label": "Castile and Leon",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q5739",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q5739",
+          "city_count": 4
+        },
+        {
+          "label": "Balearic Islands",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q107356467",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q107356467",
+          "city_count": 3
+        },
+        {
+          "label": "Canary Islands",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q5813",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q5813",
+          "city_count": 4
+        },
+        {
+          "label": "Aragon",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q4040",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q4040",
+          "city_count": 4
+        }
+      ]
+    },
+    "IT": {
+      "country_code": "IT",
+      "country": "Italy",
+      "output_file": "data/itData.json",
+      "country_qid": "Q38",
+      "country_url": "https://www.wikidata.org/wiki/Q38",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T10:56:30.462763+00:00",
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 10 region(s) sourced directly from Wikidata.",
+      "regions": [
+        {
+          "label": "Lazio",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1282",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1282",
+          "city_count": 3
+        },
+        {
+          "label": "Lombardy",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1210",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1210",
+          "city_count": 4
+        },
+        {
+          "label": "Veneto",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1243",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1243",
+          "city_count": 4
+        },
+        {
+          "label": "Emilia-Romagna",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1263",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1263",
+          "city_count": 5
+        },
+        {
+          "label": "Tuscany",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1273",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1273",
+          "city_count": 3
+        },
+        {
+          "label": "Campania",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1438",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1438",
+          "city_count": 3
+        },
+        {
+          "label": "Piedmont",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1216",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1216",
+          "city_count": 5
+        },
+        {
+          "label": "Sicily",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1460",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1460",
+          "city_count": 4
+        },
+        {
+          "label": "Apulia",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1447",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1447",
+          "city_count": 3
+        },
+        {
+          "label": "Liguria",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q1256",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1256",
+          "city_count": 3
+        }
+      ]
+    },
+    "PT": {
+      "country_code": "PT",
+      "country": "Portugal",
+      "output_file": "data/ptData.json",
+      "country_qid": "Q45",
+      "country_url": "https://www.wikidata.org/wiki/Q45",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T12:47:35.538573+00:00",
+      "regions": [
+        {
+          "label": "Lisbon District",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q207199",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q207199",
+          "city_count": 5
+        },
+        {
+          "label": "Porto District",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q322792",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q322792",
+          "city_count": 5
+        },
+        {
+          "label": "Braga District",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q326203",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q326203",
+          "city_count": 4
+        },
+        {
+          "label": "Setubal District",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q274109",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q274109",
+          "city_count": 3
+        },
+        {
+          "label": "Aveiro District",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q210527",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q210527",
+          "city_count": 4
+        },
+        {
+          "label": "Coimbra District",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q244517",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q244517",
+          "city_count": 5
+        },
+        {
+          "label": "Faro District",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q244521",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q244521",
+          "city_count": 3
+        },
+        {
+          "label": "Madeira",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q26253",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q26253",
+          "city_count": 4
+        },
+        {
+          "label": "Azores",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q25263",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q25263",
+          "city_count": 4
+        }
+      ],
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 9 region(s) sourced directly from Wikidata."
+    },
+    "AT": {
+      "country_code": "AT",
+      "country": "Austria",
+      "output_file": "data/atData.json",
+      "country_qid": "Q40",
+      "country_url": "https://www.wikidata.org/wiki/Q40",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T11:08:24.059440+00:00",
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 8 region(s) sourced directly from Wikidata; 1 city-state region(s) reduced to the exact Wikidata region label.",
+      "regions": [
+        {
+          "label": "Vienna",
+          "status": "sourced_wikidata_region_label",
+          "wikidata_qid": "Q1741",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1741",
+          "city_count": 1
+        },
+        {
+          "label": "Lower Austria",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q42497",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q42497",
+          "city_count": 5
+        },
+        {
+          "label": "Upper Austria",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q41967",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q41967",
+          "city_count": 5
+        },
+        {
+          "label": "Styria",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q41358",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q41358",
+          "city_count": 3
+        },
+        {
+          "label": "Salzburg",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q43325",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q43325",
+          "city_count": 5
+        },
+        {
+          "label": "Tyrol",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q42880",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q42880",
+          "city_count": 5
+        },
+        {
+          "label": "Carinthia",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q37985",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q37985",
+          "city_count": 3
+        },
+        {
+          "label": "Vorarlberg",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q38981",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q38981",
+          "city_count": 4
+        },
+        {
+          "label": "Burgenland",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q43210",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q43210",
+          "city_count": 1
+        }
+      ]
+    },
+    "CH": {
+      "country_code": "CH",
+      "country": "Switzerland",
+      "output_file": "data/chData.json",
+      "country_qid": "Q39",
+      "country_url": "https://www.wikidata.org/wiki/Q39",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T14:28:00.2458482+00:00",
+      "regions": [
+        {
+          "label": "Zurich",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q11943",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q11943",
+          "city_count": 5
+        },
+        {
+          "label": "Geneva",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q11917",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q11917",
+          "city_count": 1
+        },
+        {
+          "label": "Bern",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q11911",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q11911",
+          "city_count": 1
+        },
+        {
+          "label": "Basel-Stadt",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q12172",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q12172",
+          "city_count": 2
+        },
+        {
+          "label": "Vaud",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q12771",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q12771",
+          "city_count": 4
+        },
+        {
+          "label": "Lucerne",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q12121",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q12121",
+          "city_count": 3
+        },
+        {
+          "label": "Aargau",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q11972",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q11972",
+          "city_count": 3
+        },
+        {
+          "label": "Ticino",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q12724",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q12724",
+          "city_count": 4
+        },
+        {
+          "label": "St. Gallen",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q12746",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q12746",
+          "city_count": 5
+        }
+      ],
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 8 region(s) sourced directly from Wikidata; 1 region(s) use curated city labels to avoid municipality-heavy Wikidata outputs."
+    },
+    "SE": {
+      "country_code": "SE",
+      "country": "Sweden",
+      "output_file": "data/seData.json",
+      "country_qid": "Q34",
+      "country_url": "https://www.wikidata.org/wiki/Q34",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T14:28:00.2458482+00:00",
+      "regions": [
+        {
+          "label": "Stockholm County",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q104231",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q104231",
+          "city_count": 5
+        },
+        {
+          "label": "Vastra Gotaland",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q103093",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q103093",
+          "city_count": 5
+        },
+        {
+          "label": "Skane",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q103659",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q103659",
+          "city_count": 3
+        },
+        {
+          "label": "Uppsala County",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q104926",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q104926",
+          "city_count": 5
+        },
+        {
+          "label": "Ostergotland",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q104940",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q104940",
+          "city_count": 5
+        },
+        {
+          "label": "Vasterbotten",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q104877",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q104877",
+          "city_count": 3
+        },
+        {
+          "label": "Orebro County",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q104257",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q104257",
+          "city_count": 4
+        },
+        {
+          "label": "Jonkoping County",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q103672",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q103672",
+          "city_count": 5
+        }
+      ],
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 4 region(s) sourced directly from Wikidata; 4 region(s) use curated city labels to avoid municipality-heavy Wikidata outputs."
+    },
+    "NO": {
+      "country_code": "NO",
+      "country": "Norway",
+      "output_file": "data/noData.json",
+      "country_qid": "Q20",
+      "country_url": "https://www.wikidata.org/wiki/Q20",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T14:28:00.2458482+00:00",
+      "regions": [
+        {
+          "label": "Oslo",
+          "status": "sourced_wikidata",
+          "wikidata_qid": "Q585",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q585",
+          "city_count": 1
+        },
+        {
+          "label": "Vestland",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q56407177",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q56407177",
+          "city_count": 5
+        },
+        {
+          "label": "Trondelag",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q127676",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q127676",
+          "city_count": 5
+        },
+        {
+          "label": "Rogaland",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q50624",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q50624",
+          "city_count": 5
+        },
+        {
+          "label": "Troms",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q50631",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q50631",
+          "city_count": 4
+        },
+        {
+          "label": "Agder",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q2729021",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q2729021",
+          "city_count": 5
+        },
+        {
+          "label": "Akershus",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q50615",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q50615",
+          "city_count": 5
+        },
+        {
+          "label": "More og Romsdal",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q50627",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q50627",
+          "city_count": 5
+        },
+        {
+          "label": "Nordland",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q50630",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q50630",
+          "city_count": 5
+        }
+      ],
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 1 region(s) sourced directly from Wikidata; 8 region(s) use curated city labels to avoid municipality-heavy Wikidata outputs."
+    },
+    "CA": {
+      "country_code": "CA",
+      "country": "Canada",
+      "output_file": "data/caData.json",
+      "country_qid": "Q16",
+      "country_url": "https://www.wikidata.org/wiki/Q16",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T15:19:30.759464+00:00",
+      "regions": [
+        {
+          "label": "Ontario",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1904",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1904",
+          "city_count": 5
+        },
+        {
+          "label": "Quebec",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q176",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q176",
+          "city_count": 5
+        },
+        {
+          "label": "British Columbia",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1973",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1973",
+          "city_count": 5
+        },
+        {
+          "label": "Alberta",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1951",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1951",
+          "city_count": 5
+        },
+        {
+          "label": "Manitoba",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1948",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1948",
+          "city_count": 5
+        },
+        {
+          "label": "Saskatchewan",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1989",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1989",
+          "city_count": 5
+        },
+        {
+          "label": "Nova Scotia",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1952",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1952",
+          "city_count": 5
+        },
+        {
+          "label": "New Brunswick",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1965",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1965",
+          "city_count": 5
+        },
+        {
+          "label": "Newfoundland and Labrador",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q2003",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q2003",
+          "city_count": 5
+        },
+        {
+          "label": "Prince Edward Island",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1978",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1978",
+          "city_count": 5
+        },
+        {
+          "label": "Northwest Territories",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q2007",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q2007",
+          "city_count": 5
+        },
+        {
+          "label": "Nunavut",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q2023",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q2023",
+          "city_count": 5
+        },
+        {
+          "label": "Yukon",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q2009",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q2009",
+          "city_count": 5
+        }
+      ],
+      "country_root_status": "sourced_wikidata_curated_labels",
+      "country_root_city_count": 8,
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 0 region(s) sourced directly from Wikidata; 13 region(s) use curated city labels to avoid municipality-heavy Wikidata outputs; the country root list uses curated labels for stable nationwide coverage."
+    },
+    "SG": {
+      "country_code": "SG",
+      "country": "Singapore",
+      "output_file": "data/sgData.json",
+      "country_qid": "Q334",
+      "country_url": "https://www.wikidata.org/wiki/Q334",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T15:20:10.902538+00:00",
+      "regions": [
+        {
+          "label": "Central Singapore Community Development Council",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q2544592",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q2544592",
+          "city_count": 5
+        },
+        {
+          "label": "North East Community Development Council",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q3710534",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q3710534",
+          "city_count": 5
+        },
+        {
+          "label": "North West Community Development Council",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q5784118",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q5784118",
+          "city_count": 5
+        },
+        {
+          "label": "South East Community Development Council",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1687545",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1687545",
+          "city_count": 5
+        },
+        {
+          "label": "South West Community Development Council",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q5784126",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q5784126",
+          "city_count": 5
+        }
+      ],
+      "country_root_status": "sourced_wikidata_curated_labels",
+      "country_root_city_count": 8,
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 0 region(s) sourced directly from Wikidata; 5 region(s) use curated city labels to avoid municipality-heavy Wikidata outputs; the country root list uses curated labels for stable nationwide coverage."
+    },
+    "GB": {
+      "country_code": "GB",
+      "country": "United Kingdom",
+      "output_file": "data/gbData.json",
+      "country_qid": "Q145",
+      "country_url": "https://www.wikidata.org/wiki/Q145",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T17:48:10.294202+00:00",
+      "regions": [
+        {
+          "label": "England",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q21",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q21",
+          "city_count": 5
+        },
+        {
+          "label": "Scotland",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q22",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q22",
+          "city_count": 5
+        },
+        {
+          "label": "Wales",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q25",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q25",
+          "city_count": 5
+        },
+        {
+          "label": "Northern Ireland",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q26",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q26",
+          "city_count": 5
+        }
+      ],
+      "country_root_status": "sourced_wikidata_curated_labels",
+      "country_root_city_count": 8,
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 0 region(s) sourced directly from Wikidata; 4 region(s) use curated city labels to avoid municipality-heavy Wikidata outputs; the country root list uses curated labels for stable nationwide coverage."
+    },
+    "JP": {
+      "country_code": "JP",
+      "country": "Japan",
+      "output_file": "data/jpData.json",
+      "country_qid": "Q17",
+      "country_url": "https://www.wikidata.org/wiki/Q17",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T17:42:45.493346+00:00",
+      "regions": [
+        {
+          "label": "Tokyo",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1490",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1490",
+          "city_count": 5
+        },
+        {
+          "label": "Osaka Prefecture",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q122723",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q122723",
+          "city_count": 5
+        },
+        {
+          "label": "Kanagawa Prefecture",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q127513",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q127513",
+          "city_count": 5
+        },
+        {
+          "label": "Aichi Prefecture",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q80434",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q80434",
+          "city_count": 5
+        },
+        {
+          "label": "Saitama Prefecture",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q128186",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q128186",
+          "city_count": 5
+        },
+        {
+          "label": "Chiba Prefecture",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q80011",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q80011",
+          "city_count": 5
+        },
+        {
+          "label": "Hokkaido",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1037393",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1037393",
+          "city_count": 5
+        },
+        {
+          "label": "Fukuoka Prefecture",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q123258",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q123258",
+          "city_count": 5
+        },
+        {
+          "label": "Kyoto Prefecture",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q120730",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q120730",
+          "city_count": 5
+        },
+        {
+          "label": "Hyogo Prefecture",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q130290",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q130290",
+          "city_count": 5
+        }
+      ],
+      "country_root_status": "sourced_wikidata_curated_labels",
+      "country_root_city_count": 8,
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 0 region(s) sourced directly from Wikidata; 10 region(s) use curated city labels to avoid municipality-heavy Wikidata outputs; the country root list uses curated labels for stable nationwide coverage."
+    },
+    "US": {
+      "country_code": "US",
+      "country": "United States",
+      "output_file": "data/usData.json",
+      "country_qid": "Q30",
+      "country_url": "https://www.wikidata.org/wiki/Q30",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T17:42:45.699488+00:00",
+      "regions": [
+        {
+          "label": "Alabama",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q173",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q173",
+          "city_count": 5
+        },
+        {
+          "label": "Alaska",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q797",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q797",
+          "city_count": 5
+        },
+        {
+          "label": "Arizona",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q816",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q816",
+          "city_count": 5
+        },
+        {
+          "label": "Arkansas",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1612",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1612",
+          "city_count": 5
+        },
+        {
+          "label": "California",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q99",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q99",
+          "city_count": 5
+        },
+        {
+          "label": "Colorado",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1261",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1261",
+          "city_count": 5
+        },
+        {
+          "label": "Connecticut",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q779",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q779",
+          "city_count": 5
+        },
+        {
+          "label": "Delaware",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1393",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1393",
+          "city_count": 5
+        },
+        {
+          "label": "Florida",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q812",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q812",
+          "city_count": 5
+        },
+        {
+          "label": "Georgia",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1428",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1428",
+          "city_count": 5
+        },
+        {
+          "label": "Hawaii",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q782",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q782",
+          "city_count": 5
+        },
+        {
+          "label": "Idaho",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1221",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1221",
+          "city_count": 5
+        },
+        {
+          "label": "Illinois",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1204",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1204",
+          "city_count": 5
+        },
+        {
+          "label": "Indiana",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1415",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1415",
+          "city_count": 5
+        },
+        {
+          "label": "Iowa",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1546",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1546",
+          "city_count": 5
+        },
+        {
+          "label": "Kansas",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1558",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1558",
+          "city_count": 5
+        },
+        {
+          "label": "Kentucky",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1603",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1603",
+          "city_count": 5
+        },
+        {
+          "label": "Louisiana",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1588",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1588",
+          "city_count": 5
+        },
+        {
+          "label": "Maine",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q724",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q724",
+          "city_count": 5
+        },
+        {
+          "label": "Maryland",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1391",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1391",
+          "city_count": 5
+        },
+        {
+          "label": "Massachusetts",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q771",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q771",
+          "city_count": 5
+        },
+        {
+          "label": "Michigan",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1166",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1166",
+          "city_count": 5
+        },
+        {
+          "label": "Minnesota",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1527",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1527",
+          "city_count": 5
+        },
+        {
+          "label": "Mississippi",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1494",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1494",
+          "city_count": 5
+        },
+        {
+          "label": "Missouri",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1581",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1581",
+          "city_count": 5
+        },
+        {
+          "label": "Montana",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1212",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1212",
+          "city_count": 5
+        },
+        {
+          "label": "Nebraska",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1553",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1553",
+          "city_count": 5
+        },
+        {
+          "label": "Nevada",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1227",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1227",
+          "city_count": 5
+        },
+        {
+          "label": "New Hampshire",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q759",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q759",
+          "city_count": 5
+        },
+        {
+          "label": "New Jersey",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1408",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1408",
+          "city_count": 5
+        },
+        {
+          "label": "New Mexico",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1522",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1522",
+          "city_count": 5
+        },
+        {
+          "label": "New York",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1384",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1384",
+          "city_count": 5
+        },
+        {
+          "label": "North Carolina",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1454",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1454",
+          "city_count": 5
+        },
+        {
+          "label": "North Dakota",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1207",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1207",
+          "city_count": 5
+        },
+        {
+          "label": "Ohio",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1397",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1397",
+          "city_count": 5
+        },
+        {
+          "label": "Oklahoma",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1649",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1649",
+          "city_count": 5
+        },
+        {
+          "label": "Oregon",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q824",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q824",
+          "city_count": 5
+        },
+        {
+          "label": "Pennsylvania",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1400",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1400",
+          "city_count": 5
+        },
+        {
+          "label": "Rhode Island",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1387",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1387",
+          "city_count": 5
+        },
+        {
+          "label": "South Carolina",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1456",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1456",
+          "city_count": 5
+        },
+        {
+          "label": "South Dakota",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1211",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1211",
+          "city_count": 5
+        },
+        {
+          "label": "Tennessee",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1509",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1509",
+          "city_count": 5
+        },
+        {
+          "label": "Texas",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1439",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1439",
+          "city_count": 5
+        },
+        {
+          "label": "Utah",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q829",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q829",
+          "city_count": 5
+        },
+        {
+          "label": "Vermont",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q16551",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q16551",
+          "city_count": 5
+        },
+        {
+          "label": "Virginia",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1370",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1370",
+          "city_count": 5
+        },
+        {
+          "label": "Washington",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1223",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1223",
+          "city_count": 5
+        },
+        {
+          "label": "West Virginia",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1371",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1371",
+          "city_count": 5
+        },
+        {
+          "label": "Wisconsin",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1537",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1537",
+          "city_count": 5
+        },
+        {
+          "label": "Wyoming",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q1214",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q1214",
+          "city_count": 5
+        }
+      ],
+      "country_root_status": "sourced_wikidata_curated_labels",
+      "country_root_city_count": 8,
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 0 region(s) sourced directly from Wikidata; 50 region(s) use curated city labels to avoid municipality-heavy Wikidata outputs; the country root list uses curated labels for stable nationwide coverage."
+    },
+    "HK": {
+      "country_code": "HK",
+      "country": "Hong Kong",
+      "output_file": "data/hkData.json",
+      "country_qid": "Q8646",
+      "country_url": "https://www.wikidata.org/wiki/Q8646",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T17:42:46.397557+00:00",
+      "regions": [
+        {
+          "label": "Central and Western District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q312485",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q312485",
+          "city_count": 5
+        },
+        {
+          "label": "Wan Chai District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q986434",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q986434",
+          "city_count": 5
+        },
+        {
+          "label": "Eastern District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q727054",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q727054",
+          "city_count": 5
+        },
+        {
+          "label": "Southern District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q986431",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q986431",
+          "city_count": 5
+        },
+        {
+          "label": "Yau Tsim Mong District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q157669",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q157669",
+          "city_count": 5
+        },
+        {
+          "label": "Sham Shui Po District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q655626",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q655626",
+          "city_count": 5
+        },
+        {
+          "label": "Kowloon City District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q986415",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q986415",
+          "city_count": 5
+        },
+        {
+          "label": "Wong Tai Sin District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q878503",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q878503",
+          "city_count": 5
+        },
+        {
+          "label": "Kwun Tong District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q875773",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q875773",
+          "city_count": 5
+        },
+        {
+          "label": "Kwai Tsing District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q877132",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q877132",
+          "city_count": 5
+        },
+        {
+          "label": "Sha Tin District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q15019",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q15019",
+          "city_count": 5
+        },
+        {
+          "label": "Sai Kung District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q155697",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q155697",
+          "city_count": 5
+        },
+        {
+          "label": "Tuen Mun District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q986383",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q986383",
+          "city_count": 5
+        },
+        {
+          "label": "Yuen Long District",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q871442",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q871442",
+          "city_count": 5
+        }
+      ],
+      "country_root_status": "sourced_wikidata_curated_labels",
+      "country_root_city_count": 8,
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 0 region(s) sourced directly from Wikidata; 14 region(s) use curated city labels to avoid municipality-heavy Wikidata outputs; the country root list uses curated labels for stable nationwide coverage."
+    },
+    "KR": {
+      "country_code": "KR",
+      "country": "South Korea",
+      "output_file": "data/krData.json",
+      "country_qid": "Q884",
+      "country_url": "https://www.wikidata.org/wiki/Q884",
+      "source_name": "Wikidata Query Service",
+      "source_url": "https://query.wikidata.org/",
+      "source_docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/en",
+      "script": "scripts/sync-sourced-country-data.py",
+      "generated_at": "2026-03-28T17:42:47.383816+00:00",
+      "regions": [
+        {
+          "label": "Seoul",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q8684",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q8684",
+          "city_count": 1
+        },
+        {
+          "label": "Busan",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q16520",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q16520",
+          "city_count": 1
+        },
+        {
+          "label": "Incheon",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q20934",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q20934",
+          "city_count": 1
+        },
+        {
+          "label": "Daegu",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q20927",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q20927",
+          "city_count": 1
+        },
+        {
+          "label": "Daejeon",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q20921",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q20921",
+          "city_count": 1
+        },
+        {
+          "label": "Gwangju",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q41283",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q41283",
+          "city_count": 1
+        },
+        {
+          "label": "Ulsan",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q41278",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q41278",
+          "city_count": 1
+        },
+        {
+          "label": "Gyeonggi Province",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q20937",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q20937",
+          "city_count": 5
+        },
+        {
+          "label": "Gangwon Province",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q41071",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q41071",
+          "city_count": 5
+        },
+        {
+          "label": "North Chungcheong Province",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q41066",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q41066",
+          "city_count": 5
+        },
+        {
+          "label": "South Chungcheong Province",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q41070",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q41070",
+          "city_count": 5
+        },
+        {
+          "label": "North Gyeongsang Province",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q41154",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q41154",
+          "city_count": 5
+        },
+        {
+          "label": "South Gyeongsang Province",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q41151",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q41151",
+          "city_count": 5
+        },
+        {
+          "label": "Jeju Province",
+          "status": "sourced_wikidata_curated_labels",
+          "wikidata_qid": "Q41164",
+          "wikidata_url": "https://www.wikidata.org/wiki/Q41164",
+          "city_count": 2
+        }
+      ],
+      "country_root_status": "sourced_wikidata_curated_labels",
+      "country_root_city_count": 8,
+      "notes": "Region labels stay aligned with the existing UI. Cities are population-ranked place entities sourced from Wikidata and ASCII-normalized for frontend consistency. Coverage: 0 region(s) sourced directly from Wikidata; 14 region(s) use curated city labels to avoid municipality-heavy Wikidata outputs; the country root list uses curated labels for stable nationwide coverage."
+    }
+  }
+}

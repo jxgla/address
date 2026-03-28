@@ -1,0 +1,108 @@
+{
+  "ES": {
+    "region": "Spain",
+    "cities": [
+      "Madrid",
+      "Barcelona",
+      "Valencia",
+      "Zaragoza",
+      "Seville",
+      "Malaga",
+      "Palma",
+      "Las Palmas de Gran Canaria"
+    ]
+  },
+  "Community of Madrid": {
+    "region": "Community of Madrid",
+    "cities": [
+      "Madrid",
+      "Mostoles",
+      "Alcala de Henares",
+      "Leganes",
+      "Getafe"
+    ]
+  },
+  "Catalonia": {
+    "region": "Catalonia",
+    "cities": [
+      "Barcelona",
+      "L'Hospitalet de Llobregat",
+      "Terrassa",
+      "Badalona",
+      "Sabadell"
+    ]
+  },
+  "Andalusia": {
+    "region": "Andalusia",
+    "cities": [
+      "Seville",
+      "Malaga",
+      "Cordoba",
+      "Granada",
+      "Jerez de la Frontera"
+    ]
+  },
+  "Valencian Community": {
+    "region": "Valencian Community",
+    "cities": [
+      "Valencia",
+      "Alicante",
+      "Elche",
+      "Castellon de la Plana"
+    ]
+  },
+  "Basque Country": {
+    "region": "Basque Country",
+    "cities": [
+      "Bilbao",
+      "Vitoria-Gasteiz",
+      "San Sebastian",
+      "Barakaldo"
+    ]
+  },
+  "Galicia": {
+    "region": "Galicia",
+    "cities": [
+      "Vigo",
+      "A Coruna",
+      "Ourense",
+      "Santiago de Compostela",
+      "Lugo"
+    ]
+  },
+  "Castile and Leon": {
+    "region": "Castile and Leon",
+    "cities": [
+      "Valladolid",
+      "Burgos",
+      "Salamanca",
+      "Leon"
+    ]
+  },
+  "Balearic Islands": {
+    "region": "Balearic Islands",
+    "cities": [
+      "Palma",
+      "Ibiza",
+      "Calvia"
+    ]
+  },
+  "Canary Islands": {
+    "region": "Canary Islands",
+    "cities": [
+      "Las Palmas de Gran Canaria",
+      "Santa Cruz de Tenerife",
+      "San Cristobal de La Laguna",
+      "Telde"
+    ]
+  },
+  "Aragon": {
+    "region": "Aragon",
+    "cities": [
+      "Zaragoza",
+      "Huesca",
+      "Teruel",
+      "Calatayud"
+    ]
+  }
+}

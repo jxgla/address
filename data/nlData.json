@@ -1,0 +1,127 @@
+{
+  "NL": {
+    "region": "Netherlands",
+    "cities": [
+      "Amsterdam",
+      "Rotterdam",
+      "The Hague",
+      "Utrecht",
+      "Eindhoven",
+      "Groningen",
+      "Tilburg",
+      "Almere"
+    ]
+  },
+  "Drenthe": {
+    "region": "Drenthe",
+    "cities": [
+      "Emmen",
+      "Assen",
+      "Hoogeveen"
+    ]
+  },
+  "Flevoland": {
+    "region": "Flevoland",
+    "cities": [
+      "Almere",
+      "Lelystad",
+      "Noordoostpolder",
+      "Dronten",
+      "Zeewolde"
+    ]
+  },
+  "Friesland": {
+    "region": "Friesland",
+    "cities": [
+      "Leeuwarden",
+      "Sudwest-Fryslan",
+      "Smallingerland",
+      "De Fryske Marren",
+      "Heerenveen"
+    ]
+  },
+  "Gelderland": {
+    "region": "Gelderland",
+    "cities": [
+      "Nijmegen",
+      "Apeldoorn",
+      "Arnhem",
+      "Ede"
+    ]
+  },
+  "Groningen": {
+    "region": "Groningen",
+    "cities": [
+      "Groningen",
+      "Westerkwartier",
+      "Midden-Groningen"
+    ]
+  },
+  "Limburg": {
+    "region": "Limburg",
+    "cities": [
+      "Maastricht",
+      "Venlo",
+      "Sittard-Geleen",
+      "Heerlen",
+      "Roermond"
+    ]
+  },
+  "North Brabant": {
+    "region": "North Brabant",
+    "cities": [
+      "Eindhoven",
+      "Tilburg",
+      "Breda",
+      "'s-Hertogenbosch"
+    ]
+  },
+  "North Holland": {
+    "region": "North Holland",
+    "cities": [
+      "Amsterdam",
+      "Haarlem",
+      "Haarlemmermeer",
+      "Zaanstad",
+      "Alkmaar"
+    ]
+  },
+  "Overijssel": {
+    "region": "Overijssel",
+    "cities": [
+      "Enschede",
+      "Zwolle",
+      "Deventer"
+    ]
+  },
+  "South Holland": {
+    "region": "South Holland",
+    "cities": [
+      "Rotterdam",
+      "The Hague",
+      "Zoetermeer",
+      "Leiden",
+      "Dordrecht"
+    ]
+  },
+  "Utrecht": {
+    "region": "Utrecht",
+    "cities": [
+      "Utrecht",
+      "Amersfoort",
+      "Veenendaal",
+      "Stichtse Vecht",
+      "Zeist"
+    ]
+  },
+  "Zeeland": {
+    "region": "Zeeland",
+    "cities": [
+      "Terneuzen",
+      "Middelburg",
+      "Vlissingen",
+      "Goes",
+      "Schouwen-Duiveland"
+    ]
+  }
+}

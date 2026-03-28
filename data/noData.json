@@ -1,0 +1,100 @@
+{
+  "NO": {
+    "region": "Norway",
+    "cities": [
+      "Oslo",
+      "Bergen",
+      "Trondheim",
+      "Stavanger",
+      "Kristiansand",
+      "Tromso",
+      "Alesund",
+      "Bodo"
+    ]
+  },
+  "Oslo": {
+    "region": "Oslo",
+    "cities": [
+      "Oslo"
+    ]
+  },
+  "Vestland": {
+    "region": "Vestland",
+    "cities": [
+      "Bergen",
+      "Floro",
+      "Voss",
+      "Forde",
+      "Odda"
+    ]
+  },
+  "Trondelag": {
+    "region": "Trondelag",
+    "cities": [
+      "Trondheim",
+      "Steinkjer",
+      "Levanger",
+      "Namsos",
+      "Stjordal"
+    ]
+  },
+  "Rogaland": {
+    "region": "Rogaland",
+    "cities": [
+      "Stavanger",
+      "Sandnes",
+      "Haugesund",
+      "Bryne",
+      "Egersund"
+    ]
+  },
+  "Troms": {
+    "region": "Troms",
+    "cities": [
+      "Tromso",
+      "Harstad",
+      "Finnsnes",
+      "Bardufoss"
+    ]
+  },
+  "Agder": {
+    "region": "Agder",
+    "cities": [
+      "Kristiansand",
+      "Arendal",
+      "Grimstad",
+      "Mandal",
+      "Farsund"
+    ]
+  },
+  "Akershus": {
+    "region": "Akershus",
+    "cities": [
+      "Lillestrom",
+      "Asker",
+      "Ski",
+      "Jessheim",
+      "Drobak"
+    ]
+  },
+  "More og Romsdal": {
+    "region": "More og Romsdal",
+    "cities": [
+      "Alesund",
+      "Molde",
+      "Kristiansund",
+      "Ulsteinvik",
+      "Volda"
+    ]
+  },
+  "Nordland": {
+    "region": "Nordland",
+    "cities": [
+      "Bodo",
+      "Narvik",
+      "Mo i Rana",
+      "Svolvaer",
+      "Sortland"
+    ]
+  }
+}

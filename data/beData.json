@@ -1,0 +1,107 @@
+{
+  "BE": {
+    "region": "Belgium",
+    "cities": [
+      "Antwerp",
+      "Ghent",
+      "Brussels",
+      "Liege",
+      "Bruges",
+      "Namur",
+      "Leuven",
+      "Mons"
+    ]
+  },
+  "Brussels-Capital Region": {
+    "region": "Brussels-Capital Region",
+    "cities": [
+      "Brussels",
+      "Anderlecht",
+      "Schaerbeek"
+    ]
+  },
+  "Antwerp Province": {
+    "region": "Antwerp Province",
+    "cities": [
+      "Antwerp",
+      "Mechelen",
+      "Turnhout",
+      "Geel",
+      "Lier"
+    ]
+  },
+  "East Flanders": {
+    "region": "East Flanders",
+    "cities": [
+      "Ghent",
+      "Aalst",
+      "Sint-Niklaas",
+      "Beveren"
+    ]
+  },
+  "West Flanders": {
+    "region": "West Flanders",
+    "cities": [
+      "Bruges",
+      "Kortrijk",
+      "Ostend",
+      "Roeselare"
+    ]
+  },
+  "Flemish Brabant": {
+    "region": "Flemish Brabant",
+    "cities": [
+      "Leuven",
+      "Vilvoorde",
+      "Halle",
+      "Tienen",
+      "Aarschot"
+    ]
+  },
+  "Limburg": {
+    "region": "Limburg",
+    "cities": [
+      "Hasselt",
+      "Beringen",
+      "Sint-Truiden",
+      "Lommel",
+      "Bilzen"
+    ]
+  },
+  "Hainaut": {
+    "region": "Hainaut",
+    "cities": [
+      "Mons",
+      "La Louviere",
+      "Tournai",
+      "Mouscron"
+    ]
+  },
+  "Liege": {
+    "region": "Liege",
+    "cities": [
+      "Liege",
+      "Seraing",
+      "Verviers"
+    ]
+  },
+  "Namur": {
+    "region": "Namur",
+    "cities": [
+      "Namur",
+      "Andenne",
+      "Gembloux",
+      "Sambreville"
+    ]
+  },
+  "Luxembourg": {
+    "region": "Luxembourg",
+    "cities": [
+      "Arlon",
+      "Bastogne",
+      "Marche-en-Famenne",
+      "Aubange",
+      "Durbuy"
+    ]
+  }
+}

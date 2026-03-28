@@ -1,70 +1,145 @@
 {
   "CA": {
+    "region": "Canada",
     "cities": [
       "Toronto",
-      "Vancouver",
       "Montreal",
-      "Calgary"
+      "Vancouver",
+      "Calgary",
+      "Edmonton",
+      "Ottawa",
+      "Winnipeg",
+      "Quebec City"
     ]
   },
   "Ontario": {
     "region": "Ontario",
     "cities": [
-      "Gonzalezhaven",
-      "Johnstad",
-      "Kristenburgh",
-      "Lake",
-      "Lewistown",
-      "Michaelmouth",
-      "New",
-      "North",
-      "Port",
-      "South",
-      "West"
+      "Toronto",
+      "Ottawa",
+      "Hamilton",
+      "London",
+      "Kitchener"
     ]
   },
   "Quebec": {
     "region": "Quebec",
     "cities": [
-      "Conniechester",
-      "East",
-      "Kaneton",
-      "Lake",
-      "Martinezview",
-      "New",
-      "Nobleport",
-      "Robertbury",
-      "Ronaldborough",
-      "South",
-      "Watkinsfort",
-      "West"
+      "Montreal",
+      "Quebec City",
+      "Laval",
+      "Gatineau",
+      "Longueuil"
     ]
   },
   "British Columbia": {
     "region": "British Columbia",
     "cities": [
-      "Dawnshire",
-      "East",
-      "Gardnerville",
-      "Kaneview",
-      "Kimberlyberg",
-      "Lake",
-      "Port",
-      "South",
-      "West"
+      "Vancouver",
+      "Surrey",
+      "Burnaby",
+      "Richmond",
+      "Kelowna"
     ]
   },
   "Alberta": {
     "region": "Alberta",
     "cities": [
-      "Brittanyville",
-      "East",
-      "Gallowaybury",
-      "Matthewstad",
-      "New",
-      "North",
-      "Port",
-      "South"
+      "Calgary",
+      "Edmonton",
+      "Red Deer",
+      "Lethbridge",
+      "Medicine Hat"
+    ]
+  },
+  "Manitoba": {
+    "region": "Manitoba",
+    "cities": [
+      "Winnipeg",
+      "Brandon",
+      "Steinbach",
+      "Thompson",
+      "Portage la Prairie"
+    ]
+  },
+  "Saskatchewan": {
+    "region": "Saskatchewan",
+    "cities": [
+      "Saskatoon",
+      "Regina",
+      "Prince Albert",
+      "Moose Jaw",
+      "Swift Current"
+    ]
+  },
+  "Nova Scotia": {
+    "region": "Nova Scotia",
+    "cities": [
+      "Halifax",
+      "Sydney",
+      "Truro",
+      "New Glasgow",
+      "Kentville"
+    ]
+  },
+  "New Brunswick": {
+    "region": "New Brunswick",
+    "cities": [
+      "Moncton",
+      "Saint John",
+      "Fredericton",
+      "Dieppe",
+      "Miramichi"
+    ]
+  },
+  "Newfoundland and Labrador": {
+    "region": "Newfoundland and Labrador",
+    "cities": [
+      "St. John's",
+      "Mount Pearl",
+      "Corner Brook",
+      "Conception Bay South",
+      "Gander"
+    ]
+  },
+  "Prince Edward Island": {
+    "region": "Prince Edward Island",
+    "cities": [
+      "Charlottetown",
+      "Summerside",
+      "Stratford",
+      "Cornwall",
+      "Montague"
+    ]
+  },
+  "Northwest Territories": {
+    "region": "Northwest Territories",
+    "cities": [
+      "Yellowknife",
+      "Hay River",
+      "Inuvik",
+      "Fort Smith",
+      "Behchoko"
+    ]
+  },
+  "Nunavut": {
+    "region": "Nunavut",
+    "cities": [
+      "Iqaluit",
+      "Rankin Inlet",
+      "Arviat",
+      "Cambridge Bay",
+      "Baker Lake"
+    ]
+  },
+  "Yukon": {
+    "region": "Yukon",
+    "cities": [
+      "Whitehorse",
+      "Dawson City",
+      "Watson Lake",
+      "Haines Junction",
+      "Carmacks"
     ]
   }
 }

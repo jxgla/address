@@ -1,49 +1,115 @@
 {
-  "東京": {
-    "prefecture": "東京",
+  "JP": {
+    "region": "Japan",
     "cities": [
-      "東京",
-      "新宿",
-      "渋谷",
-      "品川",
-      "千代田"
+      "Tokyo",
+      "Yokohama",
+      "Osaka",
+      "Nagoya",
+      "Sapporo",
+      "Fukuoka",
+      "Kyoto",
+      "Kobe"
     ]
   },
-  "大阪": {
-    "prefecture": "大阪",
+  "Tokyo": {
+    "region": "Tokyo",
     "cities": [
-      "大阪",
-      "梅田",
-      "心斎橋",
-      "難波",
-      "北新地"
+      "Tokyo",
+      "Hachioji",
+      "Machida",
+      "Fuchu",
+      "Chofu"
     ]
   },
-  "神奈川": {
-    "prefecture": "神奈川",
+  "Osaka Prefecture": {
+    "region": "Osaka Prefecture",
     "cities": [
-      "横浜",
-      "川崎",
-      "相模原",
-      "横須賀"
+      "Osaka",
+      "Sakai",
+      "Higashiosaka",
+      "Toyonaka",
+      "Takatsuki"
     ]
   },
-  "京都": {
-    "prefecture": "京都",
+  "Kanagawa Prefecture": {
+    "region": "Kanagawa Prefecture",
     "cities": [
-      "京都",
-      "伏見",
-      "右京",
-      "左京"
+      "Yokohama",
+      "Kawasaki",
+      "Sagamihara",
+      "Fujisawa",
+      "Yokosuka"
     ]
   },
-  "兵庫": {
-    "prefecture": "兵庫",
+  "Aichi Prefecture": {
+    "region": "Aichi Prefecture",
     "cities": [
-      "神戸",
-      "姫路",
-      "尼崎",
-      "明石"
+      "Nagoya",
+      "Toyota",
+      "Okazaki",
+      "Ichinomiya",
+      "Toyohashi"
+    ]
+  },
+  "Saitama Prefecture": {
+    "region": "Saitama Prefecture",
+    "cities": [
+      "Saitama",
+      "Kawaguchi",
+      "Kawagoe",
+      "Tokorozawa",
+      "Koshigaya"
+    ]
+  },
+  "Chiba Prefecture": {
+    "region": "Chiba Prefecture",
+    "cities": [
+      "Chiba",
+      "Funabashi",
+      "Matsudo",
+      "Kashiwa",
+      "Ichikawa"
+    ]
+  },
+  "Hokkaido": {
+    "region": "Hokkaido",
+    "cities": [
+      "Sapporo",
+      "Asahikawa",
+      "Hakodate",
+      "Kushiro",
+      "Otaru"
+    ]
+  },
+  "Fukuoka Prefecture": {
+    "region": "Fukuoka Prefecture",
+    "cities": [
+      "Fukuoka",
+      "Kitakyushu",
+      "Kurume",
+      "Omuta",
+      "Iizuka"
+    ]
+  },
+  "Kyoto Prefecture": {
+    "region": "Kyoto Prefecture",
+    "cities": [
+      "Kyoto",
+      "Uji",
+      "Kameoka",
+      "Maizuru",
+      "Fukuchiyama"
+    ]
+  },
+  "Hyogo Prefecture": {
+    "region": "Hyogo Prefecture",
+    "cities": [
+      "Kobe",
+      "Himeji",
+      "Nishinomiya",
+      "Amagasaki",
+      "Akashi"
     ]
   }
 }

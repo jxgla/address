@@ -1,0 +1,79 @@
+{
+  "IE": {
+    "region": "Ireland",
+    "cities": [
+      "Dublin",
+      "Cork",
+      "Galway",
+      "Limerick",
+      "Waterford",
+      "Kilkenny",
+      "Letterkenny",
+      "Ballina"
+    ]
+  },
+  "Dublin": {
+    "region": "Dublin",
+    "cities": [
+      "Dun Laoghaire",
+      "Cabra",
+      "Balbriggan"
+    ]
+  },
+  "Cork": {
+    "region": "Cork",
+    "cities": [
+      "Cork",
+      "Ballincollig",
+      "Cobh"
+    ]
+  },
+  "Galway": {
+    "region": "Galway",
+    "cities": [
+      "Oranmore",
+      "Athenry",
+      "Ballinasloe",
+      "Loughrea",
+      "Claregalway"
+    ]
+  },
+  "Limerick": {
+    "region": "Limerick",
+    "cities": [
+      "Limerick"
+    ]
+  },
+  "Waterford": {
+    "region": "Waterford",
+    "cities": [
+      "Waterford"
+    ]
+  },
+  "Kildare": {
+    "region": "Kildare",
+    "cities": [
+      "Leixlip",
+      "Athy"
+    ]
+  },
+  "Mayo": {
+    "region": "Mayo",
+    "cities": [
+      "Castlebar",
+      "Ballina"
+    ]
+  },
+  "Donegal": {
+    "region": "Donegal",
+    "cities": [
+      "Letterkenny"
+    ]
+  },
+  "Kilkenny": {
+    "region": "Kilkenny",
+    "cities": [
+      "Kilkenny"
+    ]
+  }
+}

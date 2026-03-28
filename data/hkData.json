@@ -1,88 +1,155 @@
 {
-  "Central & Western": {
-    "district": "Central & Western",
+  "HK": {
+    "region": "Hong Kong",
     "cities": [
       "Central",
-      "Western",
-      "Admiralty"
-    ],
-    "population": 150000
+      "Wan Chai",
+      "Quarry Bay",
+      "Aberdeen",
+      "Mong Kok",
+      "Sha Tin",
+      "Kwai Chung",
+      "Tseung Kwan O"
+    ]
   },
-  "Wan Chai": {
-    "district": "Wan Chai",
+  "Central and Western District": {
+    "region": "Central and Western District",
+    "cities": [
+      "Central",
+      "Admiralty",
+      "Sheung Wan",
+      "Sai Ying Pun",
+      "Kennedy Town"
+    ]
+  },
+  "Wan Chai District": {
+    "region": "Wan Chai District",
     "cities": [
       "Wan Chai",
-      "Causeway Bay"
-    ],
-    "population": 100000
+      "Causeway Bay",
+      "Happy Valley",
+      "Tin Hau",
+      "Tai Hang"
+    ]
   },
-  "East": {
-    "district": "East",
+  "Eastern District": {
+    "region": "Eastern District",
     "cities": [
       "Quarry Bay",
       "Tai Koo",
-      "Shau Kei Wan"
-    ],
-    "population": 150000
+      "North Point",
+      "Shau Kei Wan",
+      "Chai Wan"
+    ]
   },
-  "South": {
-    "district": "South",
+  "Southern District": {
+    "region": "Southern District",
     "cities": [
       "Aberdeen",
+      "Ap Lei Chau",
+      "Stanley",
       "Repulse Bay",
-      "Stanley"
-    ],
-    "population": 150000
+      "Wong Chuk Hang"
+    ]
   },
-  "Yau Tsim Mong": {
-    "district": "Yau Tsim Mong",
+  "Yau Tsim Mong District": {
+    "region": "Yau Tsim Mong District",
     "cities": [
       "Mong Kok",
       "Tsim Sha Tsui",
-      "Yau Ma Tei"
-    ],
-    "population": 150000
+      "Yau Ma Tei",
+      "Jordan",
+      "West Kowloon"
+    ]
   },
-  "Sham Shui Po": {
-    "district": "Sham Shui Po",
+  "Sham Shui Po District": {
+    "region": "Sham Shui Po District",
     "cities": [
       "Sham Shui Po",
-      "Cheung Sha Wan"
-    ],
-    "population": 100000
+      "Cheung Sha Wan",
+      "Lai Chi Kok",
+      "Mei Foo",
+      "Nam Cheong"
+    ]
   },
-  "Kowloon City": {
-    "district": "Kowloon City",
+  "Kowloon City District": {
+    "region": "Kowloon City District",
     "cities": [
       "Hung Hom",
-      "To Kwa Wan"
-    ],
-    "population": 100000
+      "To Kwa Wan",
+      "Ho Man Tin",
+      "Kowloon City",
+      "Kai Tak"
+    ]
   },
-  "Wong Tai Sin": {
-    "district": "Wong Tai Sin",
+  "Wong Tai Sin District": {
+    "region": "Wong Tai Sin District",
     "cities": [
       "Wong Tai Sin",
-      "Tseung Kwan O"
-    ],
-    "population": 100000
+      "Diamond Hill",
+      "San Po Kong",
+      "Chuk Yuen",
+      "Lok Fu"
+    ]
   },
-  "Kwun Tong": {
-    "district": "Kwun Tong",
+  "Kwun Tong District": {
+    "region": "Kwun Tong District",
     "cities": [
       "Kwun Tong",
-      "Lam Tin"
-    ],
-    "population": 100000
+      "Lam Tin",
+      "Yau Tong",
+      "Ngau Tau Kok",
+      "Sau Mau Ping"
+    ]
   },
-  "New Territories": {
-    "district": "New Territories",
+  "Kwai Tsing District": {
+    "region": "Kwai Tsing District",
     "cities": [
-      "Shatin",
-      "Tai Po",
+      "Kwai Chung",
+      "Tsing Yi",
+      "Lai King",
+      "Kwai Fong",
+      "Kwai Hing"
+    ]
+  },
+  "Sha Tin District": {
+    "region": "Sha Tin District",
+    "cities": [
+      "Sha Tin",
+      "Tai Wai",
+      "Fo Tan",
+      "Ma On Shan",
+      "Wu Kai Sha"
+    ]
+  },
+  "Sai Kung District": {
+    "region": "Sai Kung District",
+    "cities": [
+      "Sai Kung",
+      "Tseung Kwan O",
+      "Hang Hau",
+      "Po Lam",
+      "Clear Water Bay"
+    ]
+  },
+  "Tuen Mun District": {
+    "region": "Tuen Mun District",
+    "cities": [
       "Tuen Mun",
-      "Yuen Long"
-    ],
-    "population": 200000
+      "Siu Hong",
+      "Sam Shing",
+      "Butterfly Beach",
+      "Gold Coast"
+    ]
+  },
+  "Yuen Long District": {
+    "region": "Yuen Long District",
+    "cities": [
+      "Yuen Long",
+      "Tin Shui Wai",
+      "Kam Tin",
+      "Hung Shui Kiu",
+      "Lau Fau Shan"
+    ]
   }
 }

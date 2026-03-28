@@ -1,0 +1,97 @@
+{
+  "PT": {
+    "region": "Portugal",
+    "cities": [
+      "Lisbon",
+      "Porto",
+      "Braga",
+      "Coimbra",
+      "Setubal",
+      "Funchal",
+      "Aveiro",
+      "Ponta Delgada"
+    ]
+  },
+  "Lisbon District": {
+    "region": "Lisbon District",
+    "cities": [
+      "Lisbon",
+      "Sintra",
+      "Cascais",
+      "Loures",
+      "Oeiras"
+    ]
+  },
+  "Porto District": {
+    "region": "Porto District",
+    "cities": [
+      "Porto",
+      "Vila Nova de Gaia",
+      "Matosinhos",
+      "Gondomar",
+      "Maia"
+    ]
+  },
+  "Braga District": {
+    "region": "Braga District",
+    "cities": [
+      "Braga",
+      "Guimaraes",
+      "Vila Nova de Famalicao",
+      "Barcelos"
+    ]
+  },
+  "Setubal District": {
+    "region": "Setubal District",
+    "cities": [
+      "Setubal",
+      "Almada",
+      "Seixal"
+    ]
+  },
+  "Aveiro District": {
+    "region": "Aveiro District",
+    "cities": [
+      "Aveiro",
+      "Santa Maria da Feira",
+      "Oliveira de Azemeis",
+      "Ovar"
+    ]
+  },
+  "Coimbra District": {
+    "region": "Coimbra District",
+    "cities": [
+      "Coimbra",
+      "Figueira da Foz",
+      "Cantanhede",
+      "Montemor-o-Velho",
+      "Oliveira do Hospital"
+    ]
+  },
+  "Faro District": {
+    "region": "Faro District",
+    "cities": [
+      "Faro",
+      "Loule",
+      "Portimao"
+    ]
+  },
+  "Madeira": {
+    "region": "Madeira",
+    "cities": [
+      "Funchal",
+      "Santa Cruz",
+      "Camara de Lobos",
+      "Machico"
+    ]
+  },
+  "Azores": {
+    "region": "Azores",
+    "cities": [
+      "Ponta Delgada",
+      "Angra do Heroismo",
+      "Ribeira Grande",
+      "Praia da Vitoria"
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "IT": {
+    "region": "Italy",
+    "cities": [
+      "Rome",
+      "Milan",
+      "Naples",
+      "Turin",
+      "Palermo",
+      "Genoa",
+      "Bologna",
+      "Florence"
+    ]
+  },
+  "Lazio": {
+    "region": "Lazio",
+    "cities": [
+      "Rome",
+      "Latina",
+      "Guidonia Montecelio"
+    ]
+  },
+  "Lombardy": {
+    "region": "Lombardy",
+    "cities": [
+      "Milan",
+      "Brescia",
+      "Monza",
+      "Bergamo"
+    ]
+  },
+  "Veneto": {
+    "region": "Veneto",
+    "cities": [
+      "Verona",
+      "Venice",
+      "Padua",
+      "Vicenza"
+    ]
+  },
+  "Emilia-Romagna": {
+    "region": "Emilia-Romagna",
+    "cities": [
+      "Bologna",
+      "Parma",
+      "Modena",
+      "Reggio Emilia",
+      "Ravenna"
+    ]
+  },
+  "Tuscany": {
+    "region": "Tuscany",
+    "cities": [
+      "Florence",
+      "Prato",
+      "Livorno"
+    ]
+  },
+  "Campania": {
+    "region": "Campania",
+    "cities": [
+      "Naples",
+      "Salerno",
+      "Giugliano in Campania"
+    ]
+  },
+  "Piedmont": {
+    "region": "Piedmont",
+    "cities": [
+      "Turin",
+      "Novara",
+      "Alessandria",
+      "Asti",
+      "Cuneo"
+    ]
+  },
+  "Sicily": {
+    "region": "Sicily",
+    "cities": [
+      "Palermo",
+      "Catania",
+      "Messina",
+      "Syracuse"
+    ]
+  },
+  "Apulia": {
+    "region": "Apulia",
+    "cities": [
+      "Bari",
+      "Taranto",
+      "Foggia"
+    ]
+  },
+  "Liguria": {
+    "region": "Liguria",
+    "cities": [
+      "Genoa",
+      "Savona",
+      "Sanremo"
+    ]
+  }
+}

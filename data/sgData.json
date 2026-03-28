@@ -1,25 +1,65 @@
 {
   "SG": {
+    "region": "Singapore",
     "cities": [
       "Singapore",
-      "Bukit Merah",
-      "Toa Payoh",
       "Bedok",
+      "Jurong East",
+      "Tampines",
+      "Toa Payoh",
+      "Woodlands",
+      "Hougang",
+      "Bukit Merah"
+    ]
+  },
+  "Central Singapore Community Development Council": {
+    "region": "Central Singapore Community Development Council",
+    "cities": [
+      "Bishan",
+      "Bukit Merah",
+      "Kallang",
+      "Queenstown",
+      "Toa Payoh"
+    ]
+  },
+  "North East Community Development Council": {
+    "region": "North East Community Development Council",
+    "cities": [
+      "Hougang",
+      "Punggol",
+      "Sengkang",
+      "Serangoon",
+      "Ang Mo Kio"
+    ]
+  },
+  "North West Community Development Council": {
+    "region": "North West Community Development Council",
+    "cities": [
+      "Woodlands",
+      "Yishun",
+      "Sembawang",
+      "Bukit Panjang",
+      "Choa Chu Kang"
+    ]
+  },
+  "South East Community Development Council": {
+    "region": "South East Community Development Council",
+    "cities": [
+      "Bedok",
+      "Tampines",
+      "Pasir Ris",
+      "Marine Parade",
       "Geylang"
     ]
   },
-  "Singapore": {
-    "region": "Singapore",
+  "South West Community Development Council": {
+    "region": "South West Community Development Council",
     "cities": [
-      "Jamieview",
-      "Longton",
-      "Marthachester",
-      "Moonport",
-      "North",
-      "Rachaelport",
-      "Richardschester",
-      "Vanessachester",
-      "West"
+      "Jurong East",
+      "Jurong West",
+      "Bukit Batok",
+      "Clementi",
+      "Pioneer"
     ]
   }
 }

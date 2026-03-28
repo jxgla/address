@@ -1,0 +1,109 @@
+{
+  "FR": {
+    "region": "France",
+    "cities": [
+      "Paris",
+      "Marseille",
+      "Lyon",
+      "Toulouse",
+      "Nice",
+      "Nantes",
+      "Montpellier",
+      "Strasbourg"
+    ]
+  },
+  "Ile-de-France": {
+    "region": "Ile-de-France",
+    "cities": [
+      "Paris",
+      "Saint-Denis",
+      "Boulogne-Billancourt",
+      "Montreuil",
+      "Argenteuil"
+    ]
+  },
+  "Auvergne-Rhone-Alpes": {
+    "region": "Auvergne-Rhone-Alpes",
+    "cities": [
+      "Lyon",
+      "Saint-Etienne",
+      "Villeurbanne",
+      "Grenoble",
+      "Clermont-Ferrand"
+    ]
+  },
+  "Provence-Alpes-Cote d'Azur": {
+    "region": "Provence-Alpes-Cote d'Azur",
+    "cities": [
+      "Marseille",
+      "Nice",
+      "Toulon",
+      "Aix-en-Provence"
+    ]
+  },
+  "Occitanie": {
+    "region": "Occitanie",
+    "cities": [
+      "Toulouse",
+      "Montpellier",
+      "Nimes",
+      "Perpignan"
+    ]
+  },
+  "Nouvelle-Aquitaine": {
+    "region": "Nouvelle-Aquitaine",
+    "cities": [
+      "Bordeaux",
+      "Limoges",
+      "Poitiers",
+      "Pau",
+      "La Rochelle"
+    ]
+  },
+  "Hauts-de-France": {
+    "region": "Hauts-de-France",
+    "cities": [
+      "Lille",
+      "Amiens",
+      "Tourcoing",
+      "Roubaix",
+      "Dunkirk"
+    ]
+  },
+  "Grand Est": {
+    "region": "Grand Est",
+    "cities": [
+      "Strasbourg",
+      "Reims",
+      "Metz",
+      "Mulhouse",
+      "Nancy"
+    ]
+  },
+  "Brittany": {
+    "region": "Brittany",
+    "cities": [
+      "Rennes",
+      "Brest",
+      "Quimper",
+      "Lorient",
+      "Vannes"
+    ]
+  },
+  "Normandy": {
+    "region": "Normandy",
+    "cities": [
+      "Le Havre",
+      "Rouen",
+      "Caen"
+    ]
+  },
+  "Pays de la Loire": {
+    "region": "Pays de la Loire",
+    "cities": [
+      "Nantes",
+      "Angers",
+      "Le Mans"
+    ]
+  }
+}

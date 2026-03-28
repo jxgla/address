@@ -1,0 +1,124 @@
+{
+  "KR": {
+    "region": "South Korea",
+    "cities": [
+      "Seoul",
+      "Busan",
+      "Incheon",
+      "Daegu",
+      "Daejeon",
+      "Gwangju",
+      "Ulsan",
+      "Suwon"
+    ]
+  },
+  "Seoul": {
+    "region": "Seoul",
+    "cities": [
+      "Seoul"
+    ]
+  },
+  "Busan": {
+    "region": "Busan",
+    "cities": [
+      "Busan"
+    ]
+  },
+  "Incheon": {
+    "region": "Incheon",
+    "cities": [
+      "Incheon"
+    ]
+  },
+  "Daegu": {
+    "region": "Daegu",
+    "cities": [
+      "Daegu"
+    ]
+  },
+  "Daejeon": {
+    "region": "Daejeon",
+    "cities": [
+      "Daejeon"
+    ]
+  },
+  "Gwangju": {
+    "region": "Gwangju",
+    "cities": [
+      "Gwangju"
+    ]
+  },
+  "Ulsan": {
+    "region": "Ulsan",
+    "cities": [
+      "Ulsan"
+    ]
+  },
+  "Gyeonggi Province": {
+    "region": "Gyeonggi Province",
+    "cities": [
+      "Suwon",
+      "Seongnam",
+      "Goyang",
+      "Yongin",
+      "Bucheon"
+    ]
+  },
+  "Gangwon Province": {
+    "region": "Gangwon Province",
+    "cities": [
+      "Chuncheon",
+      "Wonju",
+      "Gangneung",
+      "Sokcho",
+      "Donghae"
+    ]
+  },
+  "North Chungcheong Province": {
+    "region": "North Chungcheong Province",
+    "cities": [
+      "Cheongju",
+      "Chungju",
+      "Jecheon",
+      "Eumseong",
+      "Jincheon"
+    ]
+  },
+  "South Chungcheong Province": {
+    "region": "South Chungcheong Province",
+    "cities": [
+      "Cheonan",
+      "Asan",
+      "Seosan",
+      "Dangjin",
+      "Boryeong"
+    ]
+  },
+  "North Gyeongsang Province": {
+    "region": "North Gyeongsang Province",
+    "cities": [
+      "Pohang",
+      "Gumi",
+      "Gyeongju",
+      "Andong",
+      "Gimcheon"
+    ]
+  },
+  "South Gyeongsang Province": {
+    "region": "South Gyeongsang Province",
+    "cities": [
+      "Changwon",
+      "Jinju",
+      "Gimhae",
+      "Yangsan",
+      "Geoje"
+    ]
+  },
+  "Jeju Province": {
+    "region": "Jeju Province",
+    "cities": [
+      "Jeju City",
+      "Seogwipo"
+    ]
+  }
+}

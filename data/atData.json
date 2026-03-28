@@ -1,0 +1,92 @@
+{
+  "AT": {
+    "region": "Austria",
+    "cities": [
+      "Vienna",
+      "Graz",
+      "Linz",
+      "Salzburg",
+      "Innsbruck",
+      "Klagenfurt am Worthersee",
+      "Wels",
+      "Villach"
+    ]
+  },
+  "Vienna": {
+    "region": "Vienna",
+    "cities": [
+      "Vienna"
+    ]
+  },
+  "Lower Austria": {
+    "region": "Lower Austria",
+    "cities": [
+      "St. Polten",
+      "Wiener Neustadt",
+      "Klosterneuburg",
+      "Baden",
+      "Krems"
+    ]
+  },
+  "Upper Austria": {
+    "region": "Upper Austria",
+    "cities": [
+      "Linz",
+      "Wels",
+      "Steyr",
+      "Leonding",
+      "Traun"
+    ]
+  },
+  "Styria": {
+    "region": "Styria",
+    "cities": [
+      "Graz",
+      "Leoben",
+      "Kapfenberg"
+    ]
+  },
+  "Salzburg": {
+    "region": "Salzburg",
+    "cities": [
+      "Salzburg",
+      "Hallein",
+      "Saalfelden am Steinernen Meer",
+      "Wals-Siezenheim",
+      "St Johann im Pongau"
+    ]
+  },
+  "Tyrol": {
+    "region": "Tyrol",
+    "cities": [
+      "Innsbruck",
+      "Kufstein",
+      "Telfs",
+      "Hall in Tirol",
+      "Worgl"
+    ]
+  },
+  "Carinthia": {
+    "region": "Carinthia",
+    "cities": [
+      "Klagenfurt am Worthersee",
+      "Villach",
+      "Wolfsberg"
+    ]
+  },
+  "Vorarlberg": {
+    "region": "Vorarlberg",
+    "cities": [
+      "Dornbirn",
+      "Feldkirch",
+      "Bregenz",
+      "Lustenau"
+    ]
+  },
+  "Burgenland": {
+    "region": "Burgenland",
+    "cities": [
+      "Eisenstadt"
+    ]
+  }
+}

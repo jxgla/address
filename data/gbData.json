@@ -1,14 +1,55 @@
 {
-  "cities": [
-    "London",
-    "Manchester",
-    "Birmingham",
-    "Leeds",
-    "Glasgow",
-    "Liverpool",
-    "Bristol",
-    "York",
-    "Oxford",
-    "Cambridge"
-  ]
+  "GB": {
+    "region": "United Kingdom",
+    "cities": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Leeds",
+      "Glasgow",
+      "Edinburgh",
+      "Cardiff",
+      "Belfast"
+    ]
+  },
+  "England": {
+    "region": "England",
+    "cities": [
+      "London",
+      "Birmingham",
+      "Manchester",
+      "Leeds",
+      "Liverpool"
+    ]
+  },
+  "Scotland": {
+    "region": "Scotland",
+    "cities": [
+      "Glasgow",
+      "Edinburgh",
+      "Aberdeen",
+      "Dundee",
+      "Inverness"
+    ]
+  },
+  "Wales": {
+    "region": "Wales",
+    "cities": [
+      "Cardiff",
+      "Swansea",
+      "Newport",
+      "Wrexham",
+      "Bangor"
+    ]
+  },
+  "Northern Ireland": {
+    "region": "Northern Ireland",
+    "cities": [
+      "Belfast",
+      "Derry",
+      "Lisburn",
+      "Newtownabbey",
+      "Bangor"
+    ]
+  }
 }

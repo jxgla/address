@@ -1,0 +1,88 @@
+{
+  "CH": {
+    "region": "Switzerland",
+    "cities": [
+      "Zurich",
+      "Geneva",
+      "Basel",
+      "Lausanne",
+      "Bern",
+      "Winterthur",
+      "Lucerne",
+      "St. Gallen"
+    ]
+  },
+  "Zurich": {
+    "region": "Zurich",
+    "cities": [
+      "Zurich",
+      "Winterthur",
+      "Uster",
+      "Dubendorf",
+      "Dietikon"
+    ]
+  },
+  "Geneva": {
+    "region": "Geneva",
+    "cities": [
+      "Geneva"
+    ]
+  },
+  "Bern": {
+    "region": "Bern",
+    "cities": [
+      "Bern"
+    ]
+  },
+  "Basel-Stadt": {
+    "region": "Basel-Stadt",
+    "cities": [
+      "Basel",
+      "Riehen"
+    ]
+  },
+  "Vaud": {
+    "region": "Vaud",
+    "cities": [
+      "Lausanne",
+      "Yverdon-les-Bains",
+      "Montreux",
+      "Nyon"
+    ]
+  },
+  "Lucerne": {
+    "region": "Lucerne",
+    "cities": [
+      "Lucerne",
+      "Emmen",
+      "Kriens"
+    ]
+  },
+  "Aargau": {
+    "region": "Aargau",
+    "cities": [
+      "Baden",
+      "Aarau",
+      "Wettingen"
+    ]
+  },
+  "Ticino": {
+    "region": "Ticino",
+    "cities": [
+      "Lugano",
+      "Bellinzona",
+      "Locarno",
+      "Mendrisio"
+    ]
+  },
+  "St. Gallen": {
+    "region": "St. Gallen",
+    "cities": [
+      "St. Gallen",
+      "Rapperswil-Jona",
+      "Wil",
+      "Gossau",
+      "Uzwil"
+    ]
+  }
+}

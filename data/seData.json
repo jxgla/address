@@ -1,0 +1,90 @@
+{
+  "SE": {
+    "region": "Sweden",
+    "cities": [
+      "Stockholm",
+      "Gothenburg",
+      "Malmo",
+      "Uppsala",
+      "Orebro",
+      "Linkoping",
+      "Jonkoping",
+      "Umea"
+    ]
+  },
+  "Stockholm County": {
+    "region": "Stockholm County",
+    "cities": [
+      "Stockholm",
+      "Sodertalje",
+      "Nacka",
+      "Huddinge",
+      "Solna"
+    ]
+  },
+  "Vastra Gotaland": {
+    "region": "Vastra Gotaland",
+    "cities": [
+      "Gothenburg",
+      "Boras",
+      "Trollhattan",
+      "Skovde",
+      "Uddevalla"
+    ]
+  },
+  "Skane": {
+    "region": "Skane",
+    "cities": [
+      "Malmo",
+      "Helsingborg",
+      "Lund"
+    ]
+  },
+  "Uppsala County": {
+    "region": "Uppsala County",
+    "cities": [
+      "Uppsala",
+      "Enkoping",
+      "Balsta",
+      "Tierp",
+      "Osthammar"
+    ]
+  },
+  "Ostergotland": {
+    "region": "Ostergotland",
+    "cities": [
+      "Linkoping",
+      "Norrkoping",
+      "Motala",
+      "Mjolby",
+      "Finspang"
+    ]
+  },
+  "Vasterbotten": {
+    "region": "Vasterbotten",
+    "cities": [
+      "Umea",
+      "Skelleftea",
+      "Lycksele"
+    ]
+  },
+  "Orebro County": {
+    "region": "Orebro County",
+    "cities": [
+      "Orebro",
+      "Karlskoga",
+      "Lindesberg",
+      "Kumla"
+    ]
+  },
+  "Jonkoping County": {
+    "region": "Jonkoping County",
+    "cities": [
+      "Jonkoping",
+      "Huskvarna",
+      "Nassjo",
+      "Varnamo",
+      "Vetlanda"
+    ]
+  }
+}

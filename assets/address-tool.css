@@ -222,9 +222,91 @@ select:focus {
   background: var(--surface-strong);
 }
 
+.profile-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
 .profile-card h3 {
-  margin: 0 0 12px;
+  margin: 0;
   font-size: 18px;
+}
+
+.profile-region {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.address-card-block {
+  padding: 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: rgba(5, 12, 25, 0.42);
+}
+
+.address-block-title {
+  margin: 0 0 12px;
+  color: #dbeafe;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.address-stack {
+  display: grid;
+  gap: 10px;
+}
+
+.address-row {
+  display: grid;
+  grid-template-columns: 148px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(9, 20, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.address-row-label {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.address-row-value {
+  min-width: 0;
+  color: #f8fbff;
+  word-break: break-word;
+}
+
+.profile-phone-row {
+  margin-top: 10px;
+}
+
+.line-copy {
+  min-height: 36px;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(125, 211, 252, 0.24);
+  background: rgba(59, 130, 246, 0.12);
+  color: #dff4ff;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+}
+
+.line-copy:hover {
+  transform: translateY(-1px);
+  background: rgba(59, 130, 246, 0.2);
+  border-color: rgba(125, 211, 252, 0.4);
+}
+
+.profile-extra {
+  margin-top: 14px;
 }
 
 .profile-line {
@@ -274,6 +356,14 @@ select:focus {
   }
 
   .btn {
+    width: 100%;
+  }
+
+  .address-row {
+    grid-template-columns: 1fr;
+  }
+
+  .line-copy {
     width: 100%;
   }
 }

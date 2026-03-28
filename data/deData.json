@@ -1,72 +1,154 @@
 {
   "DE": {
+    "region": "Germany",
     "cities": [
       "Berlin",
+      "Hamburg",
       "Munich",
+      "Cologne",
       "Frankfurt",
-      "Cologne"
+      "Stuttgart",
+      "Dusseldorf",
+      "Leipzig"
+    ]
+  },
+  "Baden-Wurttemberg": {
+    "region": "Baden-Wurttemberg",
+    "cities": [
+      "Stuttgart",
+      "Mannheim",
+      "Karlsruhe",
+      "Freiburg im Breisgau"
     ]
   },
   "Bavaria": {
     "region": "Bavaria",
     "cities": [
-      "Amberg",
-      "Bautzen",
-      "Eckernförde",
-      "Emmendingen",
-      "Finsterwalde",
-      "Forchheim",
-      "Herzberg",
-      "Hoyerswerda",
-      "Mainburg",
-      "Mettmann",
-      "Schwarzenberg",
-      "Stollberg"
+      "Munich",
+      "Nuremberg",
+      "Augsburg"
     ]
   },
-  "North Rhine-Westphalia": {
-    "region": "North Rhine-Westphalia",
+  "Berlin": {
+    "region": "Berlin",
     "cities": [
-      "Gardelegen",
-      "Gerolzhofen",
-      "Halberstadt",
-      "Havelberg",
-      "Hohenmölsen",
-      "Hohenstein-Ernstthal",
-      "Lüneburg",
-      "Miesbach",
-      "Parchim",
-      "Rathenow"
+      "Berlin"
     ]
   },
-  "Baden-Württemberg": {
-    "region": "Baden-Württemberg",
+  "Brandenburg": {
+    "region": "Brandenburg",
     "cities": [
-      "Bad",
-      "Grafenau",
-      "Gräfenhainichen",
-      "Höxter",
-      "Kulmbach",
-      "Main-Höchst",
-      "Pritzwalk",
-      "Rathenow",
-      "Sigmaringen",
-      "Stadtroda"
+      "Potsdam",
+      "Cottbus",
+      "Brandenburg an der Havel",
+      "Frankfurt (Oder)"
+    ]
+  },
+  "Bremen": {
+    "region": "Bremen",
+    "cities": [
+      "Bremen",
+      "Bremerhaven"
+    ]
+  },
+  "Hamburg": {
+    "region": "Hamburg",
+    "cities": [
+      "Hamburg"
     ]
   },
   "Hesse": {
     "region": "Hesse",
     "cities": [
-      "Arnstadt",
-      "Aue",
-      "Bersenbrück",
-      "Eisenhüttenstadt",
-      "Erding",
-      "Füssen",
-      "Lübeck",
-      "Mayen",
-      "München",
-      "Staßfurt"
+      "Frankfurt",
+      "Wiesbaden",
+      "Kassel",
+      "Darmstadt",
+      "Offenbach am Main"
+    ]
+  },
+  "Lower Saxony": {
+    "region": "Lower Saxony",
+    "cities": [
+      "Hanover",
+      "Brunswick",
+      "Oldenburg",
+      "Osnabruck"
+    ]
+  },
+  "Mecklenburg-Vorpommern": {
+    "region": "Mecklenburg-Vorpommern",
+    "cities": [
+      "Rostock",
+      "Schwerin",
+      "Neubrandenburg",
+      "Greifswald",
+      "Stralsund"
+    ]
+  },
+  "North Rhine-Westphalia": {
+    "region": "North Rhine-Westphalia",
+    "cities": [
+      "Cologne",
+      "Dusseldorf",
+      "Dortmund",
+      "Essen",
+      "Duisburg"
+    ]
+  },
+  "Rhineland-Palatinate": {
+    "region": "Rhineland-Palatinate",
+    "cities": [
+      "Mainz",
+      "Ludwigshafen",
+      "Koblenz",
+      "Trier",
+      "Kaiserslautern"
+    ]
+  },
+  "Saarland": {
+    "region": "Saarland",
+    "cities": [
+      "Saarbrucken",
+      "Neunkirchen",
+      "Homburg",
+      "Volklingen",
+      "Sankt Ingbert"
+    ]
+  },
+  "Saxony": {
+    "region": "Saxony",
+    "cities": [
+      "Leipzig",
+      "Dresden",
+      "Chemnitz"
+    ]
+  },
+  "Saxony-Anhalt": {
+    "region": "Saxony-Anhalt",
+    "cities": [
+      "Halle (Saale)",
+      "Magdeburg",
+      "Dessau-Rolau"
+    ]
+  },
+  "Schleswig-Holstein": {
+    "region": "Schleswig-Holstein",
+    "cities": [
+      "Kiel",
+      "Lubeck",
+      "Flensburg",
+      "Norderstedt",
+      "Neumunster"
+    ]
+  },
+  "Thuringia": {
+    "region": "Thuringia",
+    "cities": [
+      "Erfurt",
+      "Jena",
+      "Gera",
+      "Weimar"
     ]
   }
 }
