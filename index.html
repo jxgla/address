@@ -61,6 +61,15 @@
               </select>
             </label>
 
+            <label>
+              <span>JP / TW 输出语言</span>
+              <select id="localization-mode" name="localizationMode">
+                <option value="native">本地名字 / 本地地址</option>
+                <option value="english">English name / English address</option>
+              </select>
+              <small id="localization-note" class="field-note">仅对日本和台湾生效，生成后也可以直接切换显示与复制。</small>
+            </label>
+
             <div class="grid two-up">
               <label>
                 <span>生成数量</span>
@@ -87,7 +96,7 @@
         <section class="panel results-panel">
           <div class="panel-head">
             <h2>生成结果</h2>
-            <p id="result-meta">等待生成。</p>
+            <p id="result-meta" role="status" aria-live="polite">等待生成。</p>
           </div>
 
           <div class="result-stage">

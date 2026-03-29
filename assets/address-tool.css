@@ -121,6 +121,12 @@ label span {
   font-weight: 600;
 }
 
+.field-note {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 input,
 select,
 button {
@@ -227,6 +233,7 @@ select:focus {
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 14px;
+  align-items: flex-start;
 }
 
 .profile-card h3 {
@@ -234,10 +241,35 @@ select:focus {
   font-size: 18px;
 }
 
+.profile-output-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(125, 211, 252, 0.22);
+  background: rgba(59, 130, 246, 0.12);
+  color: #d9f2ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
 .profile-region {
   margin: 6px 0 0;
   color: var(--muted);
   font-size: 14px;
+}
+
+.profile-name-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.profile-name-note strong {
+  color: #dbeafe;
 }
 
 .address-card-block {
@@ -288,14 +320,20 @@ select:focus {
   margin-top: 10px;
 }
 
+.profile-address-summary {
+  margin-top: 10px;
+}
+
 .line-copy {
   min-height: 36px;
+  min-width: 72px;
   padding: 0 12px;
   border-radius: 10px;
   border: 1px solid rgba(125, 211, 252, 0.24);
   background: rgba(59, 130, 246, 0.12);
   color: #dff4ff;
   cursor: pointer;
+  justify-self: end;
   transition: background 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
 }
 
@@ -361,6 +399,10 @@ select:focus {
 
   .address-row {
     grid-template-columns: 1fr;
+  }
+
+  .profile-head {
+    flex-direction: column;
   }
 
   .line-copy {
